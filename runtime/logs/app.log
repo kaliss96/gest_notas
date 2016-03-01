@@ -1,0 +1,2591 @@
+2015-05-05 03:42:17 [::1][-][f2kpgosunlhno30oqsgl5b04l0][error][yii\base\ErrorException:4] exception 'yii\base\ErrorException' with message 'syntax error, unexpected '->' (T_OBJECT_OPERATOR)' in C:\xampp\htdocs\github\gestnotas\models\User.php:111
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleFatalError()
+#1 {main}
+2015-05-05 03:42:15 [::1][-][f2kpgosunlhno30oqsgl5b04l0][info][application] $_COOKIE = [
+    'PHPSESSID' => 'f2kpgosunlhno30oqsgl5b04l0'
+    '_csrf' => '7b6828413a0cfb010fbc61efcc41da177538d32826f35ac16ad7053b04dd39e5a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"m8A3GDsc_TCxLuPvYtKVJ8ojK0nYyEnQ\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/aplicaciones/web/'
+    '__id' => 1
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost:8080'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; rv:37.0) Gecko/20100101 Firefox/37.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'es-ES,es;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://localhost:8080/github/gestnotas/'
+    'HTTP_COOKIE' => 'PHPSESSID=f2kpgosunlhno30oqsgl5b04l0; _csrf=7b6828413a0cfb010fbc61efcc41da177538d32826f35ac16ad7053b04dd39e5a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22m8A3GDsc_TCxLuPvYtKVJ8ojK0nYyEnQ%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'PATH' => 'C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Microsoft SQL Server\\110\\DTS\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\110\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\110\\Tools\\Binn\\ManagementStudio\\;C:\\Program Files\\Microsoft Visual Studio 10.0\\Common7\\IDE\\PrivateAssemblies\\;C:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files\\TortoiseGit\\bin;C:\\xampp\\php\\PEAR'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.10 (Win32) OpenSSL/1.0.1i Server at localhost Port 8080</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Win32) OpenSSL/1.0.1i'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '8080'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/github/gestnotas/web/index.php'
+    'REMOTE_PORT' => '49869'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/github/gestnotas/web/'
+    'SCRIPT_NAME' => '/github/gestnotas/web/index.php'
+    'PHP_SELF' => '/github/gestnotas/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1430790135.58
+    'REQUEST_TIME' => 1430790135
+]
+2015-05-08 22:39:52 [127.0.0.1][-][-][error][yii\db\Exception] exception 'PDOException' with message 'SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: NO)' in C:\xampp\htdocs\github\gestnotas\vendor\yiisoft\yii2\db\Connection.php:579
+Stack trace:
+#0 C:\xampp\htdocs\github\gestnotas\vendor\yiisoft\yii2\db\Connection.php(579): PDO->__construct('mysql:host=loca...', 'root', '', NULL)
+#1 C:\xampp\htdocs\github\gestnotas\vendor\yiisoft\yii2\db\Connection.php(529): yii\db\Connection->createPdoInstance()
+#2 C:\xampp\htdocs\github\gestnotas\vendor\yiisoft\yii2\db\Connection.php(836): yii\db\Connection->open()
+#3 C:\xampp\htdocs\github\gestnotas\vendor\yiisoft\yii2\db\Connection.php(823): yii\db\Connection->getMasterPdo()
+#4 C:\xampp\htdocs\github\gestnotas\vendor\yiisoft\yii2\db\Command.php(208): yii\db\Connection->getSlavePdo()
+#5 C:\xampp\htdocs\github\gestnotas\vendor\yiisoft\yii2\db\Command.php(816): yii\db\Command->prepare(true)
+#6 C:\xampp\htdocs\github\gestnotas\vendor\yiisoft\yii2\db\Command.php(350): yii\db\Command->queryInternal('fetchAll', NULL)
+#7 C:\xampp\htdocs\github\gestnotas\vendor\yiisoft\yii2\db\mysql\Schema.php(198): yii\db\Command->queryAll()
+#8 C:\xampp\htdocs\github\gestnotas\vendor\yiisoft\yii2\db\mysql\Schema.php(97): yii\db\mysql\Schema->findColumns(Object(yii\db\TableSchema))
+#9 C:\xampp\htdocs\github\gestnotas\vendor\yiisoft\yii2\db\Schema.php(140): yii\db\mysql\Schema->loadTableSchema('estudiantes')
+#10 C:\xampp\htdocs\github\gestnotas\vendor\yiisoft\yii2\db\ActiveRecord.php(294): yii\db\Schema->getTableSchema('estudiantes')
+#11 C:\xampp\htdocs\github\gestnotas\vendor\yiisoft\yii2\db\ActiveRecord.php(327): yii\db\ActiveRecord::getTableSchema()
+#12 C:\xampp\htdocs\github\gestnotas\vendor\yiisoft\yii2\db\BaseActiveRecord.php(421): yii\db\ActiveRecord->attributes()
+#13 C:\xampp\htdocs\github\gestnotas\vendor\yiisoft\yii2\db\BaseActiveRecord.php(240): yii\db\BaseActiveRecord->hasAttribute('id_est')
+#14 C:\xampp\htdocs\github\gestnotas\vendor\yiisoft\yii2\validators\Validator.php(235): yii\db\BaseActiveRecord->__get('id_est')
+#15 C:\xampp\htdocs\github\gestnotas\vendor\yiisoft\yii2\base\Model.php(333): yii\validators\Validator->validateAttributes(Object(app\models\EstudiantesSearch), Array)
+#16 C:\xampp\htdocs\github\gestnotas\models\EstudiantesSearch.php(52): yii\base\Model->validate()
+#17 C:\xampp\htdocs\github\gestnotas\controllers\EstudiantesController.php(46): app\models\EstudiantesSearch->search(Array)
+#18 [internal function]: app\controllers\EstudiantesController->actionIndex()
+#19 C:\xampp\htdocs\github\gestnotas\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#20 C:\xampp\htdocs\github\gestnotas\vendor\yiisoft\yii2\base\Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#21 C:\xampp\htdocs\github\gestnotas\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction('index', Array)
+#22 C:\xampp\htdocs\github\gestnotas\vendor\yiisoft\yii2\web\Application.php(83): yii\base\Module->runAction('estudiantes/ind...', Array)
+#23 C:\xampp\htdocs\github\gestnotas\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#24 C:\xampp\htdocs\github\gestnotas\web\index.php(12): yii\base\Application->run()
+#25 {main}
+
+Next exception 'yii\db\Exception' with message 'SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: NO)' in C:\xampp\htdocs\github\gestnotas\vendor\yiisoft\yii2\db\Connection.php:534
+Stack trace:
+#0 C:\xampp\htdocs\github\gestnotas\vendor\yiisoft\yii2\db\Connection.php(836): yii\db\Connection->open()
+#1 C:\xampp\htdocs\github\gestnotas\vendor\yiisoft\yii2\db\Connection.php(823): yii\db\Connection->getMasterPdo()
+#2 C:\xampp\htdocs\github\gestnotas\vendor\yiisoft\yii2\db\Command.php(208): yii\db\Connection->getSlavePdo()
+#3 C:\xampp\htdocs\github\gestnotas\vendor\yiisoft\yii2\db\Command.php(816): yii\db\Command->prepare(true)
+#4 C:\xampp\htdocs\github\gestnotas\vendor\yiisoft\yii2\db\Command.php(350): yii\db\Command->queryInternal('fetchAll', NULL)
+#5 C:\xampp\htdocs\github\gestnotas\vendor\yiisoft\yii2\db\mysql\Schema.php(198): yii\db\Command->queryAll()
+#6 C:\xampp\htdocs\github\gestnotas\vendor\yiisoft\yii2\db\mysql\Schema.php(97): yii\db\mysql\Schema->findColumns(Object(yii\db\TableSchema))
+#7 C:\xampp\htdocs\github\gestnotas\vendor\yiisoft\yii2\db\Schema.php(140): yii\db\mysql\Schema->loadTableSchema('estudiantes')
+#8 C:\xampp\htdocs\github\gestnotas\vendor\yiisoft\yii2\db\ActiveRecord.php(294): yii\db\Schema->getTableSchema('estudiantes')
+#9 C:\xampp\htdocs\github\gestnotas\vendor\yiisoft\yii2\db\ActiveRecord.php(327): yii\db\ActiveRecord::getTableSchema()
+#10 C:\xampp\htdocs\github\gestnotas\vendor\yiisoft\yii2\db\BaseActiveRecord.php(421): yii\db\ActiveRecord->attributes()
+#11 C:\xampp\htdocs\github\gestnotas\vendor\yiisoft\yii2\db\BaseActiveRecord.php(240): yii\db\BaseActiveRecord->hasAttribute('id_est')
+#12 C:\xampp\htdocs\github\gestnotas\vendor\yiisoft\yii2\validators\Validator.php(235): yii\db\BaseActiveRecord->__get('id_est')
+#13 C:\xampp\htdocs\github\gestnotas\vendor\yiisoft\yii2\base\Model.php(333): yii\validators\Validator->validateAttributes(Object(app\models\EstudiantesSearch), Array)
+#14 C:\xampp\htdocs\github\gestnotas\models\EstudiantesSearch.php(52): yii\base\Model->validate()
+#15 C:\xampp\htdocs\github\gestnotas\controllers\EstudiantesController.php(46): app\models\EstudiantesSearch->search(Array)
+#16 [internal function]: app\controllers\EstudiantesController->actionIndex()
+#17 C:\xampp\htdocs\github\gestnotas\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#18 C:\xampp\htdocs\github\gestnotas\vendor\yiisoft\yii2\base\Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#19 C:\xampp\htdocs\github\gestnotas\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction('index', Array)
+#20 C:\xampp\htdocs\github\gestnotas\vendor\yiisoft\yii2\web\Application.php(83): yii\base\Module->runAction('estudiantes/ind...', Array)
+#21 C:\xampp\htdocs\github\gestnotas\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#22 C:\xampp\htdocs\github\gestnotas\web\index.php(12): yii\base\Application->run()
+#23 {main}
+Additional Information:
+
+2015-05-08 22:39:51 [127.0.0.1][-][-][info][application] $_COOKIE = [
+    '_csrf' => '48305bf95e33b40d970184d09b0130f63acf20387d23c7c08cb4e92e802c1ffba:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"TVWQ-tUp1EAMEEA3aDSzqCtVM1-9S4wL\";}'
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost:8080'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; rv:37.0) Gecko/20100101 Firefox/37.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'es-ES,es;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://localhost:8080/github/gestnotas/web/'
+    'HTTP_COOKIE' => '_csrf=48305bf95e33b40d970184d09b0130f63acf20387d23c7c08cb4e92e802c1ffba%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22TVWQ-tUp1EAMEEA3aDSzqCtVM1-9S4wL%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'PATH' => 'C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Microsoft SQL Server\\110\\DTS\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\110\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\110\\Tools\\Binn\\ManagementStudio\\;C:\\Program Files\\Microsoft Visual Studio 10.0\\Common7\\IDE\\PrivateAssemblies\\;C:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files\\TortoiseGit\\bin;C:\\xampp\\php\\PEAR'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.10 (Win32) OpenSSL/1.0.1i Server at localhost Port 8080</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Win32) OpenSSL/1.0.1i'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '8080'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/github/gestnotas/web/index.php'
+    'REMOTE_PORT' => '49601'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/github/gestnotas/web/index.php/estudiantes/index'
+    'SCRIPT_NAME' => '/github/gestnotas/web/index.php'
+    'PATH_INFO' => '/estudiantes/index'
+    'PATH_TRANSLATED' => 'C:\\xampp\\htdocs\\estudiantes\\index'
+    'PHP_SELF' => '/github/gestnotas/web/index.php/estudiantes/index'
+    'REQUEST_TIME_FLOAT' => 1431117591.308
+    'REQUEST_TIME' => 1431117591
+]
+2016-02-25 15:22:53 [::1][-][-][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request "user/calificaciones/index".' in C:\xampp\htdocs\github\gestnotas\vendor\yiisoft\yii2\base\Module.php:461
+Stack trace:
+#0 C:\xampp\htdocs\github\gestnotas\vendor\yiisoft\yii2\web\Application.php(83): yii\base\Module->runAction('user/calificaci...', Array)
+#1 C:\xampp\htdocs\github\gestnotas\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 C:\xampp\htdocs\github\gestnotas\web\index.php(12): yii\base\Application->run()
+#3 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Página no encontrada.' in C:\xampp\htdocs\github\gestnotas\vendor\yiisoft\yii2\web\Application.php:95
+Stack trace:
+#0 C:\xampp\htdocs\github\gestnotas\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 C:\xampp\htdocs\github\gestnotas\web\index.php(12): yii\base\Application->run()
+#2 {main}
+2016-02-25 15:22:53 [::1][-][-][info][application] $_COOKIE = [
+    'PHPSESSID' => '9hujm5dsg9hj87alp4io88f4e7'
+    '_csrf' => '2728c884e89a590a606aca99dd8d0fbdadf67560dd292f3a17cf9d8684b3b4b9a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"0KMGvcyT_r7SfHAlFUbyw7rEjvGbByYh\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/gest/gitlab/gestnotas/web/user/admin'
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost:8080'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.116 Safari/537.36 OPR/35.0.2066.82'
+    'HTTP_REFERER' => 'http://localhost:8080/github/gestnotas/web/index.php/user/login'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, lzma, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'es-ES,es;q=0.8'
+    'HTTP_COOKIE' => 'PHPSESSID=9hujm5dsg9hj87alp4io88f4e7; _csrf=2728c884e89a590a606aca99dd8d0fbdadf67560dd292f3a17cf9d8684b3b4b9a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%220KMGvcyT_r7SfHAlFUbyw7rEjvGbByYh%22%3B%7D'
+    'PATH' => 'C:\\Program Files\\Google\\Chrome\\Application;C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Microsoft SQL Server\\110\\DTS\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\110\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\110\\Tools\\Binn\\ManagementStudio\\;C:\\Program Files\\Microsoft Visual Studio 10.0\\Common7\\IDE\\PrivateAssemblies\\;C:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files\\TortoiseGit\\bin;C:\\xampp\\php\\PEAR;C:\\adb;C:\\Program Files\\Windows Kits\\8.1\\Windows Performance Toolkit\\;C:\\Program Files\\Cracklock\\Bin'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.10 (Win32) OpenSSL/1.0.1i Server at localhost Port 8080</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Win32) OpenSSL/1.0.1i'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '8080'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/github/gestnotas/web/index.php'
+    'REMOTE_PORT' => '49702'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/github/gestnotas/web/index.php/user/calificaciones/index'
+    'SCRIPT_NAME' => '/github/gestnotas/web/index.php'
+    'PATH_INFO' => '/user/calificaciones/index'
+    'PATH_TRANSLATED' => 'C:\\xampp\\htdocs\\user\\calificaciones\\index'
+    'PHP_SELF' => '/github/gestnotas/web/index.php/user/calificaciones/index'
+    'REQUEST_TIME_FLOAT' => 1456410173.756
+    'REQUEST_TIME' => 1456410173
+]
+2016-02-26 01:23:58 [::1][-][-][error][yii\base\InvalidParamException] exception 'yii\base\InvalidParamException' with message 'Hash is invalid.' in C:\xampp\htdocs\github\gestnotas\vendor\yiisoft\yii2\base\Security.php:581
+Stack trace:
+#0 C:\xampp\htdocs\github\gestnotas\vendor\dektrium\yii2-user\helpers\Password.php(41): yii\base\Security->validatePassword('123', '123')
+#1 C:\xampp\htdocs\github\gestnotas\vendor\dektrium\yii2-user\models\LoginForm.php(72): dektrium\user\helpers\Password::validate('123', '123')
+#2 [internal function]: dektrium\user\models\LoginForm->dektrium\user\models\{closure}('password', NULL)
+#3 C:\xampp\htdocs\github\gestnotas\vendor\yiisoft\yii2\validators\InlineValidator.php(69): call_user_func(Object(Closure), 'password', NULL)
+#4 C:\xampp\htdocs\github\gestnotas\vendor\yiisoft\yii2\validators\Validator.php(238): yii\validators\InlineValidator->validateAttribute(Object(dektrium\user\models\LoginForm), 'password')
+#5 C:\xampp\htdocs\github\gestnotas\vendor\yiisoft\yii2\base\Model.php(333): yii\validators\Validator->validateAttributes(Object(dektrium\user\models\LoginForm), Array)
+#6 C:\xampp\htdocs\github\gestnotas\vendor\yiisoft\yii2\widgets\ActiveForm.php(364): yii\base\Model->validate(NULL)
+#7 C:\xampp\htdocs\github\gestnotas\vendor\dektrium\yii2-user\traits\AjaxValidationTrait.php(33): yii\widgets\ActiveForm::validate(Object(dektrium\user\models\LoginForm))
+#8 C:\xampp\htdocs\github\gestnotas\vendor\dektrium\yii2-user\controllers\SecurityController.php(100): dektrium\user\controllers\SecurityController->performAjaxValidation(Object(dektrium\user\models\LoginForm))
+#9 [internal function]: dektrium\user\controllers\SecurityController->actionLogin()
+#10 C:\xampp\htdocs\github\gestnotas\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#11 C:\xampp\htdocs\github\gestnotas\vendor\yiisoft\yii2\base\Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#12 C:\xampp\htdocs\github\gestnotas\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction('login', Array)
+#13 C:\xampp\htdocs\github\gestnotas\vendor\yiisoft\yii2\web\Application.php(83): yii\base\Module->runAction('user/security/l...', Array)
+#14 C:\xampp\htdocs\github\gestnotas\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#15 C:\xampp\htdocs\github\gestnotas\web\index.php(12): yii\base\Application->run()
+#16 {main}
+2016-02-26 01:23:58 [::1][-][-][info][application] $_POST = [
+    '_csrf' => 'akxZWXlyWms/PjsULUYrXBt6PhERRzk4MnkoHBFALgQuBzYwSDcfWQ=='
+    'login-form' => [
+        'login' => 'auri'
+        'password' => '123'
+        'rememberMe' => '0'
+    ]
+    'ajax' => 'login-form'
+]
+
+$_COOKIE = [
+    'PHPSESSID' => '38mam244r3sv9c3ef83coka1l1'
+    '_csrf' => '84fd203f761619c73b4f8bcfb105bd5ef9d73b36f65056c766b0ed539eb3f1ada:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"UrbMT4q7q6gHh5cSX5qEh2toDKoi1EE2\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/gest_notas/web/'
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost:8080'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_LENGTH' => '169'
+    'HTTP_ACCEPT' => 'application/json, text/javascript, */*; q=0.01'
+    'HTTP_ORIGIN' => 'http://localhost:8080'
+    'HTTP_X_CSRF_TOKEN' => 'akxZWXlyWms/PjsULUYrXBt6PhERRzk4MnkoHBFALgQuBzYwSDcfWQ=='
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.116 Safari/537.36 OPR/35.0.2066.82'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded; charset=UTF-8'
+    'HTTP_REFERER' => 'http://localhost:8080/github/gestnotas/web/index.php/user/login'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, lzma'
+    'HTTP_ACCEPT_LANGUAGE' => 'es-ES,es;q=0.8'
+    'HTTP_COOKIE' => 'PHPSESSID=38mam244r3sv9c3ef83coka1l1; _csrf=84fd203f761619c73b4f8bcfb105bd5ef9d73b36f65056c766b0ed539eb3f1ada%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22UrbMT4q7q6gHh5cSX5qEh2toDKoi1EE2%22%3B%7D'
+    'PATH' => 'C:\\Program Files\\Google\\Chrome\\Application;C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Microsoft SQL Server\\110\\DTS\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\110\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\110\\Tools\\Binn\\ManagementStudio\\;C:\\Program Files\\Microsoft Visual Studio 10.0\\Common7\\IDE\\PrivateAssemblies\\;C:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files\\TortoiseGit\\bin;C:\\xampp\\php\\PEAR;C:\\adb;C:\\Program Files\\Windows Kits\\8.1\\Windows Performance Toolkit\\'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.10 (Win32) OpenSSL/1.0.1i Server at localhost Port 8080</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Win32) OpenSSL/1.0.1i'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '8080'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/github/gestnotas/web/index.php'
+    'REMOTE_PORT' => '49218'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/github/gestnotas/web/index.php/user/login'
+    'SCRIPT_NAME' => '/github/gestnotas/web/index.php'
+    'PATH_INFO' => '/user/login'
+    'PATH_TRANSLATED' => 'C:\\xampp\\htdocs\\user\\login'
+    'PHP_SELF' => '/github/gestnotas/web/index.php/user/login'
+    'REQUEST_TIME_FLOAT' => 1456446238.137
+    'REQUEST_TIME' => 1456446238
+]
+2016-02-26 01:23:58 [::1][-][-][error][yii\base\InvalidParamException] exception 'yii\base\InvalidParamException' with message 'Hash is invalid.' in C:\xampp\htdocs\github\gestnotas\vendor\yiisoft\yii2\base\Security.php:581
+Stack trace:
+#0 C:\xampp\htdocs\github\gestnotas\vendor\dektrium\yii2-user\helpers\Password.php(41): yii\base\Security->validatePassword('123', '123')
+#1 C:\xampp\htdocs\github\gestnotas\vendor\dektrium\yii2-user\models\LoginForm.php(72): dektrium\user\helpers\Password::validate('123', '123')
+#2 [internal function]: dektrium\user\models\LoginForm->dektrium\user\models\{closure}('password', NULL)
+#3 C:\xampp\htdocs\github\gestnotas\vendor\yiisoft\yii2\validators\InlineValidator.php(69): call_user_func(Object(Closure), 'password', NULL)
+#4 C:\xampp\htdocs\github\gestnotas\vendor\yiisoft\yii2\validators\Validator.php(238): yii\validators\InlineValidator->validateAttribute(Object(dektrium\user\models\LoginForm), 'password')
+#5 C:\xampp\htdocs\github\gestnotas\vendor\yiisoft\yii2\base\Model.php(333): yii\validators\Validator->validateAttributes(Object(dektrium\user\models\LoginForm), Array)
+#6 C:\xampp\htdocs\github\gestnotas\vendor\yiisoft\yii2\widgets\ActiveForm.php(364): yii\base\Model->validate(NULL)
+#7 C:\xampp\htdocs\github\gestnotas\vendor\dektrium\yii2-user\traits\AjaxValidationTrait.php(33): yii\widgets\ActiveForm::validate(Object(dektrium\user\models\LoginForm))
+#8 C:\xampp\htdocs\github\gestnotas\vendor\dektrium\yii2-user\controllers\SecurityController.php(100): dektrium\user\controllers\SecurityController->performAjaxValidation(Object(dektrium\user\models\LoginForm))
+#9 [internal function]: dektrium\user\controllers\SecurityController->actionLogin()
+#10 C:\xampp\htdocs\github\gestnotas\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#11 C:\xampp\htdocs\github\gestnotas\vendor\yiisoft\yii2\base\Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#12 C:\xampp\htdocs\github\gestnotas\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction('login', Array)
+#13 C:\xampp\htdocs\github\gestnotas\vendor\yiisoft\yii2\web\Application.php(83): yii\base\Module->runAction('user/security/l...', Array)
+#14 C:\xampp\htdocs\github\gestnotas\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#15 C:\xampp\htdocs\github\gestnotas\web\index.php(12): yii\base\Application->run()
+#16 {main}
+2016-02-26 01:23:58 [::1][-][-][info][application] $_POST = [
+    '_csrf' => 'akxZWXlyWms/PjsULUYrXBt6PhERRzk4MnkoHBFALgQuBzYwSDcfWQ=='
+    'login-form' => [
+        'login' => 'auri'
+        'password' => '123'
+        'rememberMe' => '0'
+    ]
+    'ajax' => 'login-form'
+]
+
+$_COOKIE = [
+    'PHPSESSID' => '38mam244r3sv9c3ef83coka1l1'
+    '_csrf' => '84fd203f761619c73b4f8bcfb105bd5ef9d73b36f65056c766b0ed539eb3f1ada:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"UrbMT4q7q6gHh5cSX5qEh2toDKoi1EE2\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/gest_notas/web/'
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost:8080'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_LENGTH' => '169'
+    'HTTP_ACCEPT' => 'application/json, text/javascript, */*; q=0.01'
+    'HTTP_ORIGIN' => 'http://localhost:8080'
+    'HTTP_X_CSRF_TOKEN' => 'akxZWXlyWms/PjsULUYrXBt6PhERRzk4MnkoHBFALgQuBzYwSDcfWQ=='
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.116 Safari/537.36 OPR/35.0.2066.82'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded; charset=UTF-8'
+    'HTTP_REFERER' => 'http://localhost:8080/github/gestnotas/web/index.php/user/login'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, lzma'
+    'HTTP_ACCEPT_LANGUAGE' => 'es-ES,es;q=0.8'
+    'HTTP_COOKIE' => 'PHPSESSID=38mam244r3sv9c3ef83coka1l1; _csrf=84fd203f761619c73b4f8bcfb105bd5ef9d73b36f65056c766b0ed539eb3f1ada%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22UrbMT4q7q6gHh5cSX5qEh2toDKoi1EE2%22%3B%7D'
+    'PATH' => 'C:\\Program Files\\Google\\Chrome\\Application;C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Microsoft SQL Server\\110\\DTS\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\110\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\110\\Tools\\Binn\\ManagementStudio\\;C:\\Program Files\\Microsoft Visual Studio 10.0\\Common7\\IDE\\PrivateAssemblies\\;C:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files\\TortoiseGit\\bin;C:\\xampp\\php\\PEAR;C:\\adb;C:\\Program Files\\Windows Kits\\8.1\\Windows Performance Toolkit\\'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.10 (Win32) OpenSSL/1.0.1i Server at localhost Port 8080</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Win32) OpenSSL/1.0.1i'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '8080'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/github/gestnotas/web/index.php'
+    'REMOTE_PORT' => '49220'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/github/gestnotas/web/index.php/user/login'
+    'SCRIPT_NAME' => '/github/gestnotas/web/index.php'
+    'PATH_INFO' => '/user/login'
+    'PATH_TRANSLATED' => 'C:\\xampp\\htdocs\\user\\login'
+    'PHP_SELF' => '/github/gestnotas/web/index.php/user/login'
+    'REQUEST_TIME_FLOAT' => 1456446238.92
+    'REQUEST_TIME' => 1456446238
+]
+2016-02-26 01:23:59 [::1][-][-][error][yii\base\InvalidParamException] exception 'yii\base\InvalidParamException' with message 'Hash is invalid.' in C:\xampp\htdocs\github\gestnotas\vendor\yiisoft\yii2\base\Security.php:581
+Stack trace:
+#0 C:\xampp\htdocs\github\gestnotas\vendor\dektrium\yii2-user\helpers\Password.php(41): yii\base\Security->validatePassword('123', '123')
+#1 C:\xampp\htdocs\github\gestnotas\vendor\dektrium\yii2-user\models\LoginForm.php(72): dektrium\user\helpers\Password::validate('123', '123')
+#2 [internal function]: dektrium\user\models\LoginForm->dektrium\user\models\{closure}('password', NULL)
+#3 C:\xampp\htdocs\github\gestnotas\vendor\yiisoft\yii2\validators\InlineValidator.php(69): call_user_func(Object(Closure), 'password', NULL)
+#4 C:\xampp\htdocs\github\gestnotas\vendor\yiisoft\yii2\validators\Validator.php(238): yii\validators\InlineValidator->validateAttribute(Object(dektrium\user\models\LoginForm), 'password')
+#5 C:\xampp\htdocs\github\gestnotas\vendor\yiisoft\yii2\base\Model.php(333): yii\validators\Validator->validateAttributes(Object(dektrium\user\models\LoginForm), Array)
+#6 C:\xampp\htdocs\github\gestnotas\vendor\yiisoft\yii2\widgets\ActiveForm.php(364): yii\base\Model->validate(NULL)
+#7 C:\xampp\htdocs\github\gestnotas\vendor\dektrium\yii2-user\traits\AjaxValidationTrait.php(33): yii\widgets\ActiveForm::validate(Object(dektrium\user\models\LoginForm))
+#8 C:\xampp\htdocs\github\gestnotas\vendor\dektrium\yii2-user\controllers\SecurityController.php(100): dektrium\user\controllers\SecurityController->performAjaxValidation(Object(dektrium\user\models\LoginForm))
+#9 [internal function]: dektrium\user\controllers\SecurityController->actionLogin()
+#10 C:\xampp\htdocs\github\gestnotas\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#11 C:\xampp\htdocs\github\gestnotas\vendor\yiisoft\yii2\base\Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#12 C:\xampp\htdocs\github\gestnotas\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction('login', Array)
+#13 C:\xampp\htdocs\github\gestnotas\vendor\yiisoft\yii2\web\Application.php(83): yii\base\Module->runAction('user/security/l...', Array)
+#14 C:\xampp\htdocs\github\gestnotas\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#15 C:\xampp\htdocs\github\gestnotas\web\index.php(12): yii\base\Application->run()
+#16 {main}
+2016-02-26 01:23:59 [::1][-][-][info][application] $_POST = [
+    '_csrf' => 'akxZWXlyWms/PjsULUYrXBt6PhERRzk4MnkoHBFALgQuBzYwSDcfWQ=='
+    'login-form' => [
+        'login' => 'auri'
+        'password' => '123'
+        'rememberMe' => '0'
+    ]
+    'ajax' => 'login-form'
+]
+
+$_COOKIE = [
+    'PHPSESSID' => '38mam244r3sv9c3ef83coka1l1'
+    '_csrf' => '84fd203f761619c73b4f8bcfb105bd5ef9d73b36f65056c766b0ed539eb3f1ada:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"UrbMT4q7q6gHh5cSX5qEh2toDKoi1EE2\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/gest_notas/web/'
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost:8080'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_LENGTH' => '169'
+    'HTTP_ACCEPT' => 'application/json, text/javascript, */*; q=0.01'
+    'HTTP_ORIGIN' => 'http://localhost:8080'
+    'HTTP_X_CSRF_TOKEN' => 'akxZWXlyWms/PjsULUYrXBt6PhERRzk4MnkoHBFALgQuBzYwSDcfWQ=='
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.116 Safari/537.36 OPR/35.0.2066.82'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded; charset=UTF-8'
+    'HTTP_REFERER' => 'http://localhost:8080/github/gestnotas/web/index.php/user/login'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, lzma'
+    'HTTP_ACCEPT_LANGUAGE' => 'es-ES,es;q=0.8'
+    'HTTP_COOKIE' => 'PHPSESSID=38mam244r3sv9c3ef83coka1l1; _csrf=84fd203f761619c73b4f8bcfb105bd5ef9d73b36f65056c766b0ed539eb3f1ada%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22UrbMT4q7q6gHh5cSX5qEh2toDKoi1EE2%22%3B%7D'
+    'PATH' => 'C:\\Program Files\\Google\\Chrome\\Application;C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Microsoft SQL Server\\110\\DTS\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\110\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\110\\Tools\\Binn\\ManagementStudio\\;C:\\Program Files\\Microsoft Visual Studio 10.0\\Common7\\IDE\\PrivateAssemblies\\;C:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files\\TortoiseGit\\bin;C:\\xampp\\php\\PEAR;C:\\adb;C:\\Program Files\\Windows Kits\\8.1\\Windows Performance Toolkit\\'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.10 (Win32) OpenSSL/1.0.1i Server at localhost Port 8080</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Win32) OpenSSL/1.0.1i'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '8080'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/github/gestnotas/web/index.php'
+    'REMOTE_PORT' => '49222'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/github/gestnotas/web/index.php/user/login'
+    'SCRIPT_NAME' => '/github/gestnotas/web/index.php'
+    'PATH_INFO' => '/user/login'
+    'PATH_TRANSLATED' => 'C:\\xampp\\htdocs\\user\\login'
+    'PHP_SELF' => '/github/gestnotas/web/index.php/user/login'
+    'REQUEST_TIME_FLOAT' => 1456446239.182
+    'REQUEST_TIME' => 1456446239
+]
+2016-02-26 01:23:59 [::1][-][-][error][yii\base\InvalidParamException] exception 'yii\base\InvalidParamException' with message 'Hash is invalid.' in C:\xampp\htdocs\github\gestnotas\vendor\yiisoft\yii2\base\Security.php:581
+Stack trace:
+#0 C:\xampp\htdocs\github\gestnotas\vendor\dektrium\yii2-user\helpers\Password.php(41): yii\base\Security->validatePassword('123', '123')
+#1 C:\xampp\htdocs\github\gestnotas\vendor\dektrium\yii2-user\models\LoginForm.php(72): dektrium\user\helpers\Password::validate('123', '123')
+#2 [internal function]: dektrium\user\models\LoginForm->dektrium\user\models\{closure}('password', NULL)
+#3 C:\xampp\htdocs\github\gestnotas\vendor\yiisoft\yii2\validators\InlineValidator.php(69): call_user_func(Object(Closure), 'password', NULL)
+#4 C:\xampp\htdocs\github\gestnotas\vendor\yiisoft\yii2\validators\Validator.php(238): yii\validators\InlineValidator->validateAttribute(Object(dektrium\user\models\LoginForm), 'password')
+#5 C:\xampp\htdocs\github\gestnotas\vendor\yiisoft\yii2\base\Model.php(333): yii\validators\Validator->validateAttributes(Object(dektrium\user\models\LoginForm), Array)
+#6 C:\xampp\htdocs\github\gestnotas\vendor\yiisoft\yii2\widgets\ActiveForm.php(364): yii\base\Model->validate(NULL)
+#7 C:\xampp\htdocs\github\gestnotas\vendor\dektrium\yii2-user\traits\AjaxValidationTrait.php(33): yii\widgets\ActiveForm::validate(Object(dektrium\user\models\LoginForm))
+#8 C:\xampp\htdocs\github\gestnotas\vendor\dektrium\yii2-user\controllers\SecurityController.php(100): dektrium\user\controllers\SecurityController->performAjaxValidation(Object(dektrium\user\models\LoginForm))
+#9 [internal function]: dektrium\user\controllers\SecurityController->actionLogin()
+#10 C:\xampp\htdocs\github\gestnotas\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#11 C:\xampp\htdocs\github\gestnotas\vendor\yiisoft\yii2\base\Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#12 C:\xampp\htdocs\github\gestnotas\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction('login', Array)
+#13 C:\xampp\htdocs\github\gestnotas\vendor\yiisoft\yii2\web\Application.php(83): yii\base\Module->runAction('user/security/l...', Array)
+#14 C:\xampp\htdocs\github\gestnotas\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#15 C:\xampp\htdocs\github\gestnotas\web\index.php(12): yii\base\Application->run()
+#16 {main}
+2016-02-26 01:23:59 [::1][-][-][info][application] $_POST = [
+    '_csrf' => 'akxZWXlyWms/PjsULUYrXBt6PhERRzk4MnkoHBFALgQuBzYwSDcfWQ=='
+    'login-form' => [
+        'login' => 'auri'
+        'password' => '123'
+        'rememberMe' => '0'
+    ]
+    'ajax' => 'login-form'
+]
+
+$_COOKIE = [
+    'PHPSESSID' => '38mam244r3sv9c3ef83coka1l1'
+    '_csrf' => '84fd203f761619c73b4f8bcfb105bd5ef9d73b36f65056c766b0ed539eb3f1ada:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"UrbMT4q7q6gHh5cSX5qEh2toDKoi1EE2\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/gest_notas/web/'
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost:8080'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_LENGTH' => '169'
+    'HTTP_ACCEPT' => 'application/json, text/javascript, */*; q=0.01'
+    'HTTP_ORIGIN' => 'http://localhost:8080'
+    'HTTP_X_CSRF_TOKEN' => 'akxZWXlyWms/PjsULUYrXBt6PhERRzk4MnkoHBFALgQuBzYwSDcfWQ=='
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.116 Safari/537.36 OPR/35.0.2066.82'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded; charset=UTF-8'
+    'HTTP_REFERER' => 'http://localhost:8080/github/gestnotas/web/index.php/user/login'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, lzma'
+    'HTTP_ACCEPT_LANGUAGE' => 'es-ES,es;q=0.8'
+    'HTTP_COOKIE' => 'PHPSESSID=38mam244r3sv9c3ef83coka1l1; _csrf=84fd203f761619c73b4f8bcfb105bd5ef9d73b36f65056c766b0ed539eb3f1ada%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22UrbMT4q7q6gHh5cSX5qEh2toDKoi1EE2%22%3B%7D'
+    'PATH' => 'C:\\Program Files\\Google\\Chrome\\Application;C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Microsoft SQL Server\\110\\DTS\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\110\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\110\\Tools\\Binn\\ManagementStudio\\;C:\\Program Files\\Microsoft Visual Studio 10.0\\Common7\\IDE\\PrivateAssemblies\\;C:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files\\TortoiseGit\\bin;C:\\xampp\\php\\PEAR;C:\\adb;C:\\Program Files\\Windows Kits\\8.1\\Windows Performance Toolkit\\'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.10 (Win32) OpenSSL/1.0.1i Server at localhost Port 8080</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Win32) OpenSSL/1.0.1i'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '8080'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/github/gestnotas/web/index.php'
+    'REMOTE_PORT' => '49224'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/github/gestnotas/web/index.php/user/login'
+    'SCRIPT_NAME' => '/github/gestnotas/web/index.php'
+    'PATH_INFO' => '/user/login'
+    'PATH_TRANSLATED' => 'C:\\xampp\\htdocs\\user\\login'
+    'PHP_SELF' => '/github/gestnotas/web/index.php/user/login'
+    'REQUEST_TIME_FLOAT' => 1456446239.396
+    'REQUEST_TIME' => 1456446239
+]
+2016-02-26 01:23:59 [::1][-][-][error][yii\base\InvalidParamException] exception 'yii\base\InvalidParamException' with message 'Hash is invalid.' in C:\xampp\htdocs\github\gestnotas\vendor\yiisoft\yii2\base\Security.php:581
+Stack trace:
+#0 C:\xampp\htdocs\github\gestnotas\vendor\dektrium\yii2-user\helpers\Password.php(41): yii\base\Security->validatePassword('123', '123')
+#1 C:\xampp\htdocs\github\gestnotas\vendor\dektrium\yii2-user\models\LoginForm.php(72): dektrium\user\helpers\Password::validate('123', '123')
+#2 [internal function]: dektrium\user\models\LoginForm->dektrium\user\models\{closure}('password', NULL)
+#3 C:\xampp\htdocs\github\gestnotas\vendor\yiisoft\yii2\validators\InlineValidator.php(69): call_user_func(Object(Closure), 'password', NULL)
+#4 C:\xampp\htdocs\github\gestnotas\vendor\yiisoft\yii2\validators\Validator.php(238): yii\validators\InlineValidator->validateAttribute(Object(dektrium\user\models\LoginForm), 'password')
+#5 C:\xampp\htdocs\github\gestnotas\vendor\yiisoft\yii2\base\Model.php(333): yii\validators\Validator->validateAttributes(Object(dektrium\user\models\LoginForm), Array)
+#6 C:\xampp\htdocs\github\gestnotas\vendor\yiisoft\yii2\widgets\ActiveForm.php(364): yii\base\Model->validate(NULL)
+#7 C:\xampp\htdocs\github\gestnotas\vendor\dektrium\yii2-user\traits\AjaxValidationTrait.php(33): yii\widgets\ActiveForm::validate(Object(dektrium\user\models\LoginForm))
+#8 C:\xampp\htdocs\github\gestnotas\vendor\dektrium\yii2-user\controllers\SecurityController.php(100): dektrium\user\controllers\SecurityController->performAjaxValidation(Object(dektrium\user\models\LoginForm))
+#9 [internal function]: dektrium\user\controllers\SecurityController->actionLogin()
+#10 C:\xampp\htdocs\github\gestnotas\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#11 C:\xampp\htdocs\github\gestnotas\vendor\yiisoft\yii2\base\Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#12 C:\xampp\htdocs\github\gestnotas\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction('login', Array)
+#13 C:\xampp\htdocs\github\gestnotas\vendor\yiisoft\yii2\web\Application.php(83): yii\base\Module->runAction('user/security/l...', Array)
+#14 C:\xampp\htdocs\github\gestnotas\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#15 C:\xampp\htdocs\github\gestnotas\web\index.php(12): yii\base\Application->run()
+#16 {main}
+2016-02-26 01:23:59 [::1][-][-][info][application] $_POST = [
+    '_csrf' => 'akxZWXlyWms/PjsULUYrXBt6PhERRzk4MnkoHBFALgQuBzYwSDcfWQ=='
+    'login-form' => [
+        'login' => 'auri'
+        'password' => '123'
+        'rememberMe' => '0'
+    ]
+    'ajax' => 'login-form'
+]
+
+$_COOKIE = [
+    'PHPSESSID' => '38mam244r3sv9c3ef83coka1l1'
+    '_csrf' => '84fd203f761619c73b4f8bcfb105bd5ef9d73b36f65056c766b0ed539eb3f1ada:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"UrbMT4q7q6gHh5cSX5qEh2toDKoi1EE2\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/gest_notas/web/'
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost:8080'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_LENGTH' => '169'
+    'HTTP_ACCEPT' => 'application/json, text/javascript, */*; q=0.01'
+    'HTTP_ORIGIN' => 'http://localhost:8080'
+    'HTTP_X_CSRF_TOKEN' => 'akxZWXlyWms/PjsULUYrXBt6PhERRzk4MnkoHBFALgQuBzYwSDcfWQ=='
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.116 Safari/537.36 OPR/35.0.2066.82'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded; charset=UTF-8'
+    'HTTP_REFERER' => 'http://localhost:8080/github/gestnotas/web/index.php/user/login'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, lzma'
+    'HTTP_ACCEPT_LANGUAGE' => 'es-ES,es;q=0.8'
+    'HTTP_COOKIE' => 'PHPSESSID=38mam244r3sv9c3ef83coka1l1; _csrf=84fd203f761619c73b4f8bcfb105bd5ef9d73b36f65056c766b0ed539eb3f1ada%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22UrbMT4q7q6gHh5cSX5qEh2toDKoi1EE2%22%3B%7D'
+    'PATH' => 'C:\\Program Files\\Google\\Chrome\\Application;C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Microsoft SQL Server\\110\\DTS\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\110\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\110\\Tools\\Binn\\ManagementStudio\\;C:\\Program Files\\Microsoft Visual Studio 10.0\\Common7\\IDE\\PrivateAssemblies\\;C:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files\\TortoiseGit\\bin;C:\\xampp\\php\\PEAR;C:\\adb;C:\\Program Files\\Windows Kits\\8.1\\Windows Performance Toolkit\\'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.10 (Win32) OpenSSL/1.0.1i Server at localhost Port 8080</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Win32) OpenSSL/1.0.1i'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '8080'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/github/gestnotas/web/index.php'
+    'REMOTE_PORT' => '49226'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/github/gestnotas/web/index.php/user/login'
+    'SCRIPT_NAME' => '/github/gestnotas/web/index.php'
+    'PATH_INFO' => '/user/login'
+    'PATH_TRANSLATED' => 'C:\\xampp\\htdocs\\user\\login'
+    'PHP_SELF' => '/github/gestnotas/web/index.php/user/login'
+    'REQUEST_TIME_FLOAT' => 1456446239.592
+    'REQUEST_TIME' => 1456446239
+]
+2016-02-26 01:23:59 [::1][-][-][error][yii\base\InvalidParamException] exception 'yii\base\InvalidParamException' with message 'Hash is invalid.' in C:\xampp\htdocs\github\gestnotas\vendor\yiisoft\yii2\base\Security.php:581
+Stack trace:
+#0 C:\xampp\htdocs\github\gestnotas\vendor\dektrium\yii2-user\helpers\Password.php(41): yii\base\Security->validatePassword('123', '123')
+#1 C:\xampp\htdocs\github\gestnotas\vendor\dektrium\yii2-user\models\LoginForm.php(72): dektrium\user\helpers\Password::validate('123', '123')
+#2 [internal function]: dektrium\user\models\LoginForm->dektrium\user\models\{closure}('password', NULL)
+#3 C:\xampp\htdocs\github\gestnotas\vendor\yiisoft\yii2\validators\InlineValidator.php(69): call_user_func(Object(Closure), 'password', NULL)
+#4 C:\xampp\htdocs\github\gestnotas\vendor\yiisoft\yii2\validators\Validator.php(238): yii\validators\InlineValidator->validateAttribute(Object(dektrium\user\models\LoginForm), 'password')
+#5 C:\xampp\htdocs\github\gestnotas\vendor\yiisoft\yii2\base\Model.php(333): yii\validators\Validator->validateAttributes(Object(dektrium\user\models\LoginForm), Array)
+#6 C:\xampp\htdocs\github\gestnotas\vendor\yiisoft\yii2\widgets\ActiveForm.php(364): yii\base\Model->validate(NULL)
+#7 C:\xampp\htdocs\github\gestnotas\vendor\dektrium\yii2-user\traits\AjaxValidationTrait.php(33): yii\widgets\ActiveForm::validate(Object(dektrium\user\models\LoginForm))
+#8 C:\xampp\htdocs\github\gestnotas\vendor\dektrium\yii2-user\controllers\SecurityController.php(100): dektrium\user\controllers\SecurityController->performAjaxValidation(Object(dektrium\user\models\LoginForm))
+#9 [internal function]: dektrium\user\controllers\SecurityController->actionLogin()
+#10 C:\xampp\htdocs\github\gestnotas\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#11 C:\xampp\htdocs\github\gestnotas\vendor\yiisoft\yii2\base\Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#12 C:\xampp\htdocs\github\gestnotas\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction('login', Array)
+#13 C:\xampp\htdocs\github\gestnotas\vendor\yiisoft\yii2\web\Application.php(83): yii\base\Module->runAction('user/security/l...', Array)
+#14 C:\xampp\htdocs\github\gestnotas\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#15 C:\xampp\htdocs\github\gestnotas\web\index.php(12): yii\base\Application->run()
+#16 {main}
+2016-02-26 01:23:59 [::1][-][-][info][application] $_POST = [
+    '_csrf' => 'akxZWXlyWms/PjsULUYrXBt6PhERRzk4MnkoHBFALgQuBzYwSDcfWQ=='
+    'login-form' => [
+        'login' => 'auri'
+        'password' => '123'
+        'rememberMe' => '0'
+    ]
+    'ajax' => 'login-form'
+]
+
+$_COOKIE = [
+    'PHPSESSID' => '38mam244r3sv9c3ef83coka1l1'
+    '_csrf' => '84fd203f761619c73b4f8bcfb105bd5ef9d73b36f65056c766b0ed539eb3f1ada:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"UrbMT4q7q6gHh5cSX5qEh2toDKoi1EE2\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/gest_notas/web/'
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost:8080'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_LENGTH' => '169'
+    'HTTP_ACCEPT' => 'application/json, text/javascript, */*; q=0.01'
+    'HTTP_ORIGIN' => 'http://localhost:8080'
+    'HTTP_X_CSRF_TOKEN' => 'akxZWXlyWms/PjsULUYrXBt6PhERRzk4MnkoHBFALgQuBzYwSDcfWQ=='
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.116 Safari/537.36 OPR/35.0.2066.82'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded; charset=UTF-8'
+    'HTTP_REFERER' => 'http://localhost:8080/github/gestnotas/web/index.php/user/login'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, lzma'
+    'HTTP_ACCEPT_LANGUAGE' => 'es-ES,es;q=0.8'
+    'HTTP_COOKIE' => 'PHPSESSID=38mam244r3sv9c3ef83coka1l1; _csrf=84fd203f761619c73b4f8bcfb105bd5ef9d73b36f65056c766b0ed539eb3f1ada%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22UrbMT4q7q6gHh5cSX5qEh2toDKoi1EE2%22%3B%7D'
+    'PATH' => 'C:\\Program Files\\Google\\Chrome\\Application;C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Microsoft SQL Server\\110\\DTS\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\110\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\110\\Tools\\Binn\\ManagementStudio\\;C:\\Program Files\\Microsoft Visual Studio 10.0\\Common7\\IDE\\PrivateAssemblies\\;C:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files\\TortoiseGit\\bin;C:\\xampp\\php\\PEAR;C:\\adb;C:\\Program Files\\Windows Kits\\8.1\\Windows Performance Toolkit\\'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.10 (Win32) OpenSSL/1.0.1i Server at localhost Port 8080</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Win32) OpenSSL/1.0.1i'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '8080'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/github/gestnotas/web/index.php'
+    'REMOTE_PORT' => '49228'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/github/gestnotas/web/index.php/user/login'
+    'SCRIPT_NAME' => '/github/gestnotas/web/index.php'
+    'PATH_INFO' => '/user/login'
+    'PATH_TRANSLATED' => 'C:\\xampp\\htdocs\\user\\login'
+    'PHP_SELF' => '/github/gestnotas/web/index.php/user/login'
+    'REQUEST_TIME_FLOAT' => 1456446239.802
+    'REQUEST_TIME' => 1456446239
+]
+2016-02-26 01:24:00 [::1][-][-][error][yii\base\InvalidParamException] exception 'yii\base\InvalidParamException' with message 'Hash is invalid.' in C:\xampp\htdocs\github\gestnotas\vendor\yiisoft\yii2\base\Security.php:581
+Stack trace:
+#0 C:\xampp\htdocs\github\gestnotas\vendor\dektrium\yii2-user\helpers\Password.php(41): yii\base\Security->validatePassword('123', '123')
+#1 C:\xampp\htdocs\github\gestnotas\vendor\dektrium\yii2-user\models\LoginForm.php(72): dektrium\user\helpers\Password::validate('123', '123')
+#2 [internal function]: dektrium\user\models\LoginForm->dektrium\user\models\{closure}('password', NULL)
+#3 C:\xampp\htdocs\github\gestnotas\vendor\yiisoft\yii2\validators\InlineValidator.php(69): call_user_func(Object(Closure), 'password', NULL)
+#4 C:\xampp\htdocs\github\gestnotas\vendor\yiisoft\yii2\validators\Validator.php(238): yii\validators\InlineValidator->validateAttribute(Object(dektrium\user\models\LoginForm), 'password')
+#5 C:\xampp\htdocs\github\gestnotas\vendor\yiisoft\yii2\base\Model.php(333): yii\validators\Validator->validateAttributes(Object(dektrium\user\models\LoginForm), Array)
+#6 C:\xampp\htdocs\github\gestnotas\vendor\yiisoft\yii2\widgets\ActiveForm.php(364): yii\base\Model->validate(NULL)
+#7 C:\xampp\htdocs\github\gestnotas\vendor\dektrium\yii2-user\traits\AjaxValidationTrait.php(33): yii\widgets\ActiveForm::validate(Object(dektrium\user\models\LoginForm))
+#8 C:\xampp\htdocs\github\gestnotas\vendor\dektrium\yii2-user\controllers\SecurityController.php(100): dektrium\user\controllers\SecurityController->performAjaxValidation(Object(dektrium\user\models\LoginForm))
+#9 [internal function]: dektrium\user\controllers\SecurityController->actionLogin()
+#10 C:\xampp\htdocs\github\gestnotas\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#11 C:\xampp\htdocs\github\gestnotas\vendor\yiisoft\yii2\base\Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#12 C:\xampp\htdocs\github\gestnotas\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction('login', Array)
+#13 C:\xampp\htdocs\github\gestnotas\vendor\yiisoft\yii2\web\Application.php(83): yii\base\Module->runAction('user/security/l...', Array)
+#14 C:\xampp\htdocs\github\gestnotas\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#15 C:\xampp\htdocs\github\gestnotas\web\index.php(12): yii\base\Application->run()
+#16 {main}
+2016-02-26 01:24:00 [::1][-][-][info][application] $_POST = [
+    '_csrf' => 'akxZWXlyWms/PjsULUYrXBt6PhERRzk4MnkoHBFALgQuBzYwSDcfWQ=='
+    'login-form' => [
+        'login' => 'auri'
+        'password' => '123'
+        'rememberMe' => '0'
+    ]
+    'ajax' => 'login-form'
+]
+
+$_COOKIE = [
+    'PHPSESSID' => '38mam244r3sv9c3ef83coka1l1'
+    '_csrf' => '84fd203f761619c73b4f8bcfb105bd5ef9d73b36f65056c766b0ed539eb3f1ada:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"UrbMT4q7q6gHh5cSX5qEh2toDKoi1EE2\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/gest_notas/web/'
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost:8080'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_LENGTH' => '169'
+    'HTTP_ACCEPT' => 'application/json, text/javascript, */*; q=0.01'
+    'HTTP_ORIGIN' => 'http://localhost:8080'
+    'HTTP_X_CSRF_TOKEN' => 'akxZWXlyWms/PjsULUYrXBt6PhERRzk4MnkoHBFALgQuBzYwSDcfWQ=='
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.116 Safari/537.36 OPR/35.0.2066.82'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded; charset=UTF-8'
+    'HTTP_REFERER' => 'http://localhost:8080/github/gestnotas/web/index.php/user/login'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, lzma'
+    'HTTP_ACCEPT_LANGUAGE' => 'es-ES,es;q=0.8'
+    'HTTP_COOKIE' => 'PHPSESSID=38mam244r3sv9c3ef83coka1l1; _csrf=84fd203f761619c73b4f8bcfb105bd5ef9d73b36f65056c766b0ed539eb3f1ada%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22UrbMT4q7q6gHh5cSX5qEh2toDKoi1EE2%22%3B%7D'
+    'PATH' => 'C:\\Program Files\\Google\\Chrome\\Application;C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Microsoft SQL Server\\110\\DTS\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\110\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\110\\Tools\\Binn\\ManagementStudio\\;C:\\Program Files\\Microsoft Visual Studio 10.0\\Common7\\IDE\\PrivateAssemblies\\;C:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files\\TortoiseGit\\bin;C:\\xampp\\php\\PEAR;C:\\adb;C:\\Program Files\\Windows Kits\\8.1\\Windows Performance Toolkit\\'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.10 (Win32) OpenSSL/1.0.1i Server at localhost Port 8080</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Win32) OpenSSL/1.0.1i'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '8080'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/github/gestnotas/web/index.php'
+    'REMOTE_PORT' => '49230'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/github/gestnotas/web/index.php/user/login'
+    'SCRIPT_NAME' => '/github/gestnotas/web/index.php'
+    'PATH_INFO' => '/user/login'
+    'PATH_TRANSLATED' => 'C:\\xampp\\htdocs\\user\\login'
+    'PHP_SELF' => '/github/gestnotas/web/index.php/user/login'
+    'REQUEST_TIME_FLOAT' => 1456446240.005
+    'REQUEST_TIME' => 1456446240
+]
+2016-02-26 01:24:00 [::1][-][-][error][yii\base\InvalidParamException] exception 'yii\base\InvalidParamException' with message 'Hash is invalid.' in C:\xampp\htdocs\github\gestnotas\vendor\yiisoft\yii2\base\Security.php:581
+Stack trace:
+#0 C:\xampp\htdocs\github\gestnotas\vendor\dektrium\yii2-user\helpers\Password.php(41): yii\base\Security->validatePassword('123', '123')
+#1 C:\xampp\htdocs\github\gestnotas\vendor\dektrium\yii2-user\models\LoginForm.php(72): dektrium\user\helpers\Password::validate('123', '123')
+#2 [internal function]: dektrium\user\models\LoginForm->dektrium\user\models\{closure}('password', NULL)
+#3 C:\xampp\htdocs\github\gestnotas\vendor\yiisoft\yii2\validators\InlineValidator.php(69): call_user_func(Object(Closure), 'password', NULL)
+#4 C:\xampp\htdocs\github\gestnotas\vendor\yiisoft\yii2\validators\Validator.php(238): yii\validators\InlineValidator->validateAttribute(Object(dektrium\user\models\LoginForm), 'password')
+#5 C:\xampp\htdocs\github\gestnotas\vendor\yiisoft\yii2\base\Model.php(333): yii\validators\Validator->validateAttributes(Object(dektrium\user\models\LoginForm), Array)
+#6 C:\xampp\htdocs\github\gestnotas\vendor\yiisoft\yii2\widgets\ActiveForm.php(364): yii\base\Model->validate(NULL)
+#7 C:\xampp\htdocs\github\gestnotas\vendor\dektrium\yii2-user\traits\AjaxValidationTrait.php(33): yii\widgets\ActiveForm::validate(Object(dektrium\user\models\LoginForm))
+#8 C:\xampp\htdocs\github\gestnotas\vendor\dektrium\yii2-user\controllers\SecurityController.php(100): dektrium\user\controllers\SecurityController->performAjaxValidation(Object(dektrium\user\models\LoginForm))
+#9 [internal function]: dektrium\user\controllers\SecurityController->actionLogin()
+#10 C:\xampp\htdocs\github\gestnotas\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#11 C:\xampp\htdocs\github\gestnotas\vendor\yiisoft\yii2\base\Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#12 C:\xampp\htdocs\github\gestnotas\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction('login', Array)
+#13 C:\xampp\htdocs\github\gestnotas\vendor\yiisoft\yii2\web\Application.php(83): yii\base\Module->runAction('user/security/l...', Array)
+#14 C:\xampp\htdocs\github\gestnotas\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#15 C:\xampp\htdocs\github\gestnotas\web\index.php(12): yii\base\Application->run()
+#16 {main}
+2016-02-26 01:24:00 [::1][-][-][info][application] $_POST = [
+    '_csrf' => 'akxZWXlyWms/PjsULUYrXBt6PhERRzk4MnkoHBFALgQuBzYwSDcfWQ=='
+    'login-form' => [
+        'login' => 'auri'
+        'password' => '123'
+        'rememberMe' => '0'
+    ]
+    'ajax' => 'login-form'
+]
+
+$_COOKIE = [
+    'PHPSESSID' => '38mam244r3sv9c3ef83coka1l1'
+    '_csrf' => '84fd203f761619c73b4f8bcfb105bd5ef9d73b36f65056c766b0ed539eb3f1ada:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"UrbMT4q7q6gHh5cSX5qEh2toDKoi1EE2\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/gest_notas/web/'
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost:8080'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_LENGTH' => '169'
+    'HTTP_ACCEPT' => 'application/json, text/javascript, */*; q=0.01'
+    'HTTP_ORIGIN' => 'http://localhost:8080'
+    'HTTP_X_CSRF_TOKEN' => 'akxZWXlyWms/PjsULUYrXBt6PhERRzk4MnkoHBFALgQuBzYwSDcfWQ=='
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.116 Safari/537.36 OPR/35.0.2066.82'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded; charset=UTF-8'
+    'HTTP_REFERER' => 'http://localhost:8080/github/gestnotas/web/index.php/user/login'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, lzma'
+    'HTTP_ACCEPT_LANGUAGE' => 'es-ES,es;q=0.8'
+    'HTTP_COOKIE' => 'PHPSESSID=38mam244r3sv9c3ef83coka1l1; _csrf=84fd203f761619c73b4f8bcfb105bd5ef9d73b36f65056c766b0ed539eb3f1ada%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22UrbMT4q7q6gHh5cSX5qEh2toDKoi1EE2%22%3B%7D'
+    'PATH' => 'C:\\Program Files\\Google\\Chrome\\Application;C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Microsoft SQL Server\\110\\DTS\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\110\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\110\\Tools\\Binn\\ManagementStudio\\;C:\\Program Files\\Microsoft Visual Studio 10.0\\Common7\\IDE\\PrivateAssemblies\\;C:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files\\TortoiseGit\\bin;C:\\xampp\\php\\PEAR;C:\\adb;C:\\Program Files\\Windows Kits\\8.1\\Windows Performance Toolkit\\'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.10 (Win32) OpenSSL/1.0.1i Server at localhost Port 8080</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Win32) OpenSSL/1.0.1i'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '8080'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/github/gestnotas/web/index.php'
+    'REMOTE_PORT' => '49232'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/github/gestnotas/web/index.php/user/login'
+    'SCRIPT_NAME' => '/github/gestnotas/web/index.php'
+    'PATH_INFO' => '/user/login'
+    'PATH_TRANSLATED' => 'C:\\xampp\\htdocs\\user\\login'
+    'PHP_SELF' => '/github/gestnotas/web/index.php/user/login'
+    'REQUEST_TIME_FLOAT' => 1456446240.19
+    'REQUEST_TIME' => 1456446240
+]
+2016-02-26 01:24:00 [::1][-][-][error][yii\base\InvalidParamException] exception 'yii\base\InvalidParamException' with message 'Hash is invalid.' in C:\xampp\htdocs\github\gestnotas\vendor\yiisoft\yii2\base\Security.php:581
+Stack trace:
+#0 C:\xampp\htdocs\github\gestnotas\vendor\dektrium\yii2-user\helpers\Password.php(41): yii\base\Security->validatePassword('123', '123')
+#1 C:\xampp\htdocs\github\gestnotas\vendor\dektrium\yii2-user\models\LoginForm.php(72): dektrium\user\helpers\Password::validate('123', '123')
+#2 [internal function]: dektrium\user\models\LoginForm->dektrium\user\models\{closure}('password', NULL)
+#3 C:\xampp\htdocs\github\gestnotas\vendor\yiisoft\yii2\validators\InlineValidator.php(69): call_user_func(Object(Closure), 'password', NULL)
+#4 C:\xampp\htdocs\github\gestnotas\vendor\yiisoft\yii2\validators\Validator.php(238): yii\validators\InlineValidator->validateAttribute(Object(dektrium\user\models\LoginForm), 'password')
+#5 C:\xampp\htdocs\github\gestnotas\vendor\yiisoft\yii2\base\Model.php(333): yii\validators\Validator->validateAttributes(Object(dektrium\user\models\LoginForm), Array)
+#6 C:\xampp\htdocs\github\gestnotas\vendor\yiisoft\yii2\widgets\ActiveForm.php(364): yii\base\Model->validate(NULL)
+#7 C:\xampp\htdocs\github\gestnotas\vendor\dektrium\yii2-user\traits\AjaxValidationTrait.php(33): yii\widgets\ActiveForm::validate(Object(dektrium\user\models\LoginForm))
+#8 C:\xampp\htdocs\github\gestnotas\vendor\dektrium\yii2-user\controllers\SecurityController.php(100): dektrium\user\controllers\SecurityController->performAjaxValidation(Object(dektrium\user\models\LoginForm))
+#9 [internal function]: dektrium\user\controllers\SecurityController->actionLogin()
+#10 C:\xampp\htdocs\github\gestnotas\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#11 C:\xampp\htdocs\github\gestnotas\vendor\yiisoft\yii2\base\Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#12 C:\xampp\htdocs\github\gestnotas\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction('login', Array)
+#13 C:\xampp\htdocs\github\gestnotas\vendor\yiisoft\yii2\web\Application.php(83): yii\base\Module->runAction('user/security/l...', Array)
+#14 C:\xampp\htdocs\github\gestnotas\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#15 C:\xampp\htdocs\github\gestnotas\web\index.php(12): yii\base\Application->run()
+#16 {main}
+2016-02-26 01:24:00 [::1][-][-][info][application] $_POST = [
+    '_csrf' => 'akxZWXlyWms/PjsULUYrXBt6PhERRzk4MnkoHBFALgQuBzYwSDcfWQ=='
+    'login-form' => [
+        'login' => 'auri'
+        'password' => '123'
+        'rememberMe' => '0'
+    ]
+    'ajax' => 'login-form'
+]
+
+$_COOKIE = [
+    'PHPSESSID' => '38mam244r3sv9c3ef83coka1l1'
+    '_csrf' => '84fd203f761619c73b4f8bcfb105bd5ef9d73b36f65056c766b0ed539eb3f1ada:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"UrbMT4q7q6gHh5cSX5qEh2toDKoi1EE2\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/gest_notas/web/'
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost:8080'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_LENGTH' => '169'
+    'HTTP_ACCEPT' => 'application/json, text/javascript, */*; q=0.01'
+    'HTTP_ORIGIN' => 'http://localhost:8080'
+    'HTTP_X_CSRF_TOKEN' => 'akxZWXlyWms/PjsULUYrXBt6PhERRzk4MnkoHBFALgQuBzYwSDcfWQ=='
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.116 Safari/537.36 OPR/35.0.2066.82'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded; charset=UTF-8'
+    'HTTP_REFERER' => 'http://localhost:8080/github/gestnotas/web/index.php/user/login'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, lzma'
+    'HTTP_ACCEPT_LANGUAGE' => 'es-ES,es;q=0.8'
+    'HTTP_COOKIE' => 'PHPSESSID=38mam244r3sv9c3ef83coka1l1; _csrf=84fd203f761619c73b4f8bcfb105bd5ef9d73b36f65056c766b0ed539eb3f1ada%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22UrbMT4q7q6gHh5cSX5qEh2toDKoi1EE2%22%3B%7D'
+    'PATH' => 'C:\\Program Files\\Google\\Chrome\\Application;C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Microsoft SQL Server\\110\\DTS\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\110\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\110\\Tools\\Binn\\ManagementStudio\\;C:\\Program Files\\Microsoft Visual Studio 10.0\\Common7\\IDE\\PrivateAssemblies\\;C:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files\\TortoiseGit\\bin;C:\\xampp\\php\\PEAR;C:\\adb;C:\\Program Files\\Windows Kits\\8.1\\Windows Performance Toolkit\\'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.10 (Win32) OpenSSL/1.0.1i Server at localhost Port 8080</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Win32) OpenSSL/1.0.1i'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '8080'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/github/gestnotas/web/index.php'
+    'REMOTE_PORT' => '49234'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/github/gestnotas/web/index.php/user/login'
+    'SCRIPT_NAME' => '/github/gestnotas/web/index.php'
+    'PATH_INFO' => '/user/login'
+    'PATH_TRANSLATED' => 'C:\\xampp\\htdocs\\user\\login'
+    'PHP_SELF' => '/github/gestnotas/web/index.php/user/login'
+    'REQUEST_TIME_FLOAT' => 1456446240.387
+    'REQUEST_TIME' => 1456446240
+]
+2016-02-26 01:24:00 [::1][-][-][error][yii\base\InvalidParamException] exception 'yii\base\InvalidParamException' with message 'Hash is invalid.' in C:\xampp\htdocs\github\gestnotas\vendor\yiisoft\yii2\base\Security.php:581
+Stack trace:
+#0 C:\xampp\htdocs\github\gestnotas\vendor\dektrium\yii2-user\helpers\Password.php(41): yii\base\Security->validatePassword('123', '123')
+#1 C:\xampp\htdocs\github\gestnotas\vendor\dektrium\yii2-user\models\LoginForm.php(72): dektrium\user\helpers\Password::validate('123', '123')
+#2 [internal function]: dektrium\user\models\LoginForm->dektrium\user\models\{closure}('password', NULL)
+#3 C:\xampp\htdocs\github\gestnotas\vendor\yiisoft\yii2\validators\InlineValidator.php(69): call_user_func(Object(Closure), 'password', NULL)
+#4 C:\xampp\htdocs\github\gestnotas\vendor\yiisoft\yii2\validators\Validator.php(238): yii\validators\InlineValidator->validateAttribute(Object(dektrium\user\models\LoginForm), 'password')
+#5 C:\xampp\htdocs\github\gestnotas\vendor\yiisoft\yii2\base\Model.php(333): yii\validators\Validator->validateAttributes(Object(dektrium\user\models\LoginForm), Array)
+#6 C:\xampp\htdocs\github\gestnotas\vendor\yiisoft\yii2\widgets\ActiveForm.php(364): yii\base\Model->validate(NULL)
+#7 C:\xampp\htdocs\github\gestnotas\vendor\dektrium\yii2-user\traits\AjaxValidationTrait.php(33): yii\widgets\ActiveForm::validate(Object(dektrium\user\models\LoginForm))
+#8 C:\xampp\htdocs\github\gestnotas\vendor\dektrium\yii2-user\controllers\SecurityController.php(100): dektrium\user\controllers\SecurityController->performAjaxValidation(Object(dektrium\user\models\LoginForm))
+#9 [internal function]: dektrium\user\controllers\SecurityController->actionLogin()
+#10 C:\xampp\htdocs\github\gestnotas\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#11 C:\xampp\htdocs\github\gestnotas\vendor\yiisoft\yii2\base\Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#12 C:\xampp\htdocs\github\gestnotas\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction('login', Array)
+#13 C:\xampp\htdocs\github\gestnotas\vendor\yiisoft\yii2\web\Application.php(83): yii\base\Module->runAction('user/security/l...', Array)
+#14 C:\xampp\htdocs\github\gestnotas\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#15 C:\xampp\htdocs\github\gestnotas\web\index.php(12): yii\base\Application->run()
+#16 {main}
+2016-02-26 01:24:00 [::1][-][-][info][application] $_POST = [
+    '_csrf' => 'akxZWXlyWms/PjsULUYrXBt6PhERRzk4MnkoHBFALgQuBzYwSDcfWQ=='
+    'login-form' => [
+        'login' => 'auri'
+        'password' => '123'
+        'rememberMe' => '0'
+    ]
+    'ajax' => 'login-form'
+]
+
+$_COOKIE = [
+    'PHPSESSID' => '38mam244r3sv9c3ef83coka1l1'
+    '_csrf' => '84fd203f761619c73b4f8bcfb105bd5ef9d73b36f65056c766b0ed539eb3f1ada:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"UrbMT4q7q6gHh5cSX5qEh2toDKoi1EE2\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/gest_notas/web/'
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost:8080'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_LENGTH' => '169'
+    'HTTP_ACCEPT' => 'application/json, text/javascript, */*; q=0.01'
+    'HTTP_ORIGIN' => 'http://localhost:8080'
+    'HTTP_X_CSRF_TOKEN' => 'akxZWXlyWms/PjsULUYrXBt6PhERRzk4MnkoHBFALgQuBzYwSDcfWQ=='
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.116 Safari/537.36 OPR/35.0.2066.82'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded; charset=UTF-8'
+    'HTTP_REFERER' => 'http://localhost:8080/github/gestnotas/web/index.php/user/login'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, lzma'
+    'HTTP_ACCEPT_LANGUAGE' => 'es-ES,es;q=0.8'
+    'HTTP_COOKIE' => 'PHPSESSID=38mam244r3sv9c3ef83coka1l1; _csrf=84fd203f761619c73b4f8bcfb105bd5ef9d73b36f65056c766b0ed539eb3f1ada%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22UrbMT4q7q6gHh5cSX5qEh2toDKoi1EE2%22%3B%7D'
+    'PATH' => 'C:\\Program Files\\Google\\Chrome\\Application;C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Microsoft SQL Server\\110\\DTS\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\110\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\110\\Tools\\Binn\\ManagementStudio\\;C:\\Program Files\\Microsoft Visual Studio 10.0\\Common7\\IDE\\PrivateAssemblies\\;C:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files\\TortoiseGit\\bin;C:\\xampp\\php\\PEAR;C:\\adb;C:\\Program Files\\Windows Kits\\8.1\\Windows Performance Toolkit\\'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.10 (Win32) OpenSSL/1.0.1i Server at localhost Port 8080</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Win32) OpenSSL/1.0.1i'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '8080'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/github/gestnotas/web/index.php'
+    'REMOTE_PORT' => '49236'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/github/gestnotas/web/index.php/user/login'
+    'SCRIPT_NAME' => '/github/gestnotas/web/index.php'
+    'PATH_INFO' => '/user/login'
+    'PATH_TRANSLATED' => 'C:\\xampp\\htdocs\\user\\login'
+    'PHP_SELF' => '/github/gestnotas/web/index.php/user/login'
+    'REQUEST_TIME_FLOAT' => 1456446240.572
+    'REQUEST_TIME' => 1456446240
+]
+2016-02-26 01:24:00 [::1][-][-][error][yii\base\InvalidParamException] exception 'yii\base\InvalidParamException' with message 'Hash is invalid.' in C:\xampp\htdocs\github\gestnotas\vendor\yiisoft\yii2\base\Security.php:581
+Stack trace:
+#0 C:\xampp\htdocs\github\gestnotas\vendor\dektrium\yii2-user\helpers\Password.php(41): yii\base\Security->validatePassword('123', '123')
+#1 C:\xampp\htdocs\github\gestnotas\vendor\dektrium\yii2-user\models\LoginForm.php(72): dektrium\user\helpers\Password::validate('123', '123')
+#2 [internal function]: dektrium\user\models\LoginForm->dektrium\user\models\{closure}('password', NULL)
+#3 C:\xampp\htdocs\github\gestnotas\vendor\yiisoft\yii2\validators\InlineValidator.php(69): call_user_func(Object(Closure), 'password', NULL)
+#4 C:\xampp\htdocs\github\gestnotas\vendor\yiisoft\yii2\validators\Validator.php(238): yii\validators\InlineValidator->validateAttribute(Object(dektrium\user\models\LoginForm), 'password')
+#5 C:\xampp\htdocs\github\gestnotas\vendor\yiisoft\yii2\base\Model.php(333): yii\validators\Validator->validateAttributes(Object(dektrium\user\models\LoginForm), Array)
+#6 C:\xampp\htdocs\github\gestnotas\vendor\yiisoft\yii2\widgets\ActiveForm.php(364): yii\base\Model->validate(NULL)
+#7 C:\xampp\htdocs\github\gestnotas\vendor\dektrium\yii2-user\traits\AjaxValidationTrait.php(33): yii\widgets\ActiveForm::validate(Object(dektrium\user\models\LoginForm))
+#8 C:\xampp\htdocs\github\gestnotas\vendor\dektrium\yii2-user\controllers\SecurityController.php(100): dektrium\user\controllers\SecurityController->performAjaxValidation(Object(dektrium\user\models\LoginForm))
+#9 [internal function]: dektrium\user\controllers\SecurityController->actionLogin()
+#10 C:\xampp\htdocs\github\gestnotas\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#11 C:\xampp\htdocs\github\gestnotas\vendor\yiisoft\yii2\base\Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#12 C:\xampp\htdocs\github\gestnotas\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction('login', Array)
+#13 C:\xampp\htdocs\github\gestnotas\vendor\yiisoft\yii2\web\Application.php(83): yii\base\Module->runAction('user/security/l...', Array)
+#14 C:\xampp\htdocs\github\gestnotas\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#15 C:\xampp\htdocs\github\gestnotas\web\index.php(12): yii\base\Application->run()
+#16 {main}
+2016-02-26 01:24:00 [::1][-][-][info][application] $_POST = [
+    '_csrf' => 'akxZWXlyWms/PjsULUYrXBt6PhERRzk4MnkoHBFALgQuBzYwSDcfWQ=='
+    'login-form' => [
+        'login' => 'auri'
+        'password' => '123'
+        'rememberMe' => '0'
+    ]
+    'ajax' => 'login-form'
+]
+
+$_COOKIE = [
+    'PHPSESSID' => '38mam244r3sv9c3ef83coka1l1'
+    '_csrf' => '84fd203f761619c73b4f8bcfb105bd5ef9d73b36f65056c766b0ed539eb3f1ada:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"UrbMT4q7q6gHh5cSX5qEh2toDKoi1EE2\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/gest_notas/web/'
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost:8080'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_LENGTH' => '169'
+    'HTTP_ACCEPT' => 'application/json, text/javascript, */*; q=0.01'
+    'HTTP_ORIGIN' => 'http://localhost:8080'
+    'HTTP_X_CSRF_TOKEN' => 'akxZWXlyWms/PjsULUYrXBt6PhERRzk4MnkoHBFALgQuBzYwSDcfWQ=='
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.116 Safari/537.36 OPR/35.0.2066.82'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded; charset=UTF-8'
+    'HTTP_REFERER' => 'http://localhost:8080/github/gestnotas/web/index.php/user/login'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, lzma'
+    'HTTP_ACCEPT_LANGUAGE' => 'es-ES,es;q=0.8'
+    'HTTP_COOKIE' => 'PHPSESSID=38mam244r3sv9c3ef83coka1l1; _csrf=84fd203f761619c73b4f8bcfb105bd5ef9d73b36f65056c766b0ed539eb3f1ada%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22UrbMT4q7q6gHh5cSX5qEh2toDKoi1EE2%22%3B%7D'
+    'PATH' => 'C:\\Program Files\\Google\\Chrome\\Application;C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Microsoft SQL Server\\110\\DTS\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\110\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\110\\Tools\\Binn\\ManagementStudio\\;C:\\Program Files\\Microsoft Visual Studio 10.0\\Common7\\IDE\\PrivateAssemblies\\;C:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files\\TortoiseGit\\bin;C:\\xampp\\php\\PEAR;C:\\adb;C:\\Program Files\\Windows Kits\\8.1\\Windows Performance Toolkit\\'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.10 (Win32) OpenSSL/1.0.1i Server at localhost Port 8080</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Win32) OpenSSL/1.0.1i'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '8080'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/github/gestnotas/web/index.php'
+    'REMOTE_PORT' => '49238'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/github/gestnotas/web/index.php/user/login'
+    'SCRIPT_NAME' => '/github/gestnotas/web/index.php'
+    'PATH_INFO' => '/user/login'
+    'PATH_TRANSLATED' => 'C:\\xampp\\htdocs\\user\\login'
+    'PHP_SELF' => '/github/gestnotas/web/index.php/user/login'
+    'REQUEST_TIME_FLOAT' => 1456446240.754
+    'REQUEST_TIME' => 1456446240
+]
+2016-02-26 01:24:01 [::1][-][-][error][yii\base\InvalidParamException] exception 'yii\base\InvalidParamException' with message 'Hash is invalid.' in C:\xampp\htdocs\github\gestnotas\vendor\yiisoft\yii2\base\Security.php:581
+Stack trace:
+#0 C:\xampp\htdocs\github\gestnotas\vendor\dektrium\yii2-user\helpers\Password.php(41): yii\base\Security->validatePassword('123', '123')
+#1 C:\xampp\htdocs\github\gestnotas\vendor\dektrium\yii2-user\models\LoginForm.php(72): dektrium\user\helpers\Password::validate('123', '123')
+#2 [internal function]: dektrium\user\models\LoginForm->dektrium\user\models\{closure}('password', NULL)
+#3 C:\xampp\htdocs\github\gestnotas\vendor\yiisoft\yii2\validators\InlineValidator.php(69): call_user_func(Object(Closure), 'password', NULL)
+#4 C:\xampp\htdocs\github\gestnotas\vendor\yiisoft\yii2\validators\Validator.php(238): yii\validators\InlineValidator->validateAttribute(Object(dektrium\user\models\LoginForm), 'password')
+#5 C:\xampp\htdocs\github\gestnotas\vendor\yiisoft\yii2\base\Model.php(333): yii\validators\Validator->validateAttributes(Object(dektrium\user\models\LoginForm), Array)
+#6 C:\xampp\htdocs\github\gestnotas\vendor\yiisoft\yii2\widgets\ActiveForm.php(364): yii\base\Model->validate(NULL)
+#7 C:\xampp\htdocs\github\gestnotas\vendor\dektrium\yii2-user\traits\AjaxValidationTrait.php(33): yii\widgets\ActiveForm::validate(Object(dektrium\user\models\LoginForm))
+#8 C:\xampp\htdocs\github\gestnotas\vendor\dektrium\yii2-user\controllers\SecurityController.php(100): dektrium\user\controllers\SecurityController->performAjaxValidation(Object(dektrium\user\models\LoginForm))
+#9 [internal function]: dektrium\user\controllers\SecurityController->actionLogin()
+#10 C:\xampp\htdocs\github\gestnotas\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#11 C:\xampp\htdocs\github\gestnotas\vendor\yiisoft\yii2\base\Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#12 C:\xampp\htdocs\github\gestnotas\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction('login', Array)
+#13 C:\xampp\htdocs\github\gestnotas\vendor\yiisoft\yii2\web\Application.php(83): yii\base\Module->runAction('user/security/l...', Array)
+#14 C:\xampp\htdocs\github\gestnotas\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#15 C:\xampp\htdocs\github\gestnotas\web\index.php(12): yii\base\Application->run()
+#16 {main}
+2016-02-26 01:24:00 [::1][-][-][info][application] $_POST = [
+    '_csrf' => 'akxZWXlyWms/PjsULUYrXBt6PhERRzk4MnkoHBFALgQuBzYwSDcfWQ=='
+    'login-form' => [
+        'login' => 'auri'
+        'password' => '123'
+        'rememberMe' => '0'
+    ]
+    'ajax' => 'login-form'
+]
+
+$_COOKIE = [
+    'PHPSESSID' => '38mam244r3sv9c3ef83coka1l1'
+    '_csrf' => '84fd203f761619c73b4f8bcfb105bd5ef9d73b36f65056c766b0ed539eb3f1ada:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"UrbMT4q7q6gHh5cSX5qEh2toDKoi1EE2\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/gest_notas/web/'
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost:8080'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_LENGTH' => '169'
+    'HTTP_ACCEPT' => 'application/json, text/javascript, */*; q=0.01'
+    'HTTP_ORIGIN' => 'http://localhost:8080'
+    'HTTP_X_CSRF_TOKEN' => 'akxZWXlyWms/PjsULUYrXBt6PhERRzk4MnkoHBFALgQuBzYwSDcfWQ=='
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.116 Safari/537.36 OPR/35.0.2066.82'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded; charset=UTF-8'
+    'HTTP_REFERER' => 'http://localhost:8080/github/gestnotas/web/index.php/user/login'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, lzma'
+    'HTTP_ACCEPT_LANGUAGE' => 'es-ES,es;q=0.8'
+    'HTTP_COOKIE' => 'PHPSESSID=38mam244r3sv9c3ef83coka1l1; _csrf=84fd203f761619c73b4f8bcfb105bd5ef9d73b36f65056c766b0ed539eb3f1ada%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22UrbMT4q7q6gHh5cSX5qEh2toDKoi1EE2%22%3B%7D'
+    'PATH' => 'C:\\Program Files\\Google\\Chrome\\Application;C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Microsoft SQL Server\\110\\DTS\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\110\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\110\\Tools\\Binn\\ManagementStudio\\;C:\\Program Files\\Microsoft Visual Studio 10.0\\Common7\\IDE\\PrivateAssemblies\\;C:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files\\TortoiseGit\\bin;C:\\xampp\\php\\PEAR;C:\\adb;C:\\Program Files\\Windows Kits\\8.1\\Windows Performance Toolkit\\'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.10 (Win32) OpenSSL/1.0.1i Server at localhost Port 8080</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Win32) OpenSSL/1.0.1i'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '8080'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/github/gestnotas/web/index.php'
+    'REMOTE_PORT' => '49240'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/github/gestnotas/web/index.php/user/login'
+    'SCRIPT_NAME' => '/github/gestnotas/web/index.php'
+    'PATH_INFO' => '/user/login'
+    'PATH_TRANSLATED' => 'C:\\xampp\\htdocs\\user\\login'
+    'PHP_SELF' => '/github/gestnotas/web/index.php/user/login'
+    'REQUEST_TIME_FLOAT' => 1456446240.947
+    'REQUEST_TIME' => 1456446240
+]
+2016-02-26 01:24:01 [::1][-][-][error][yii\base\InvalidParamException] exception 'yii\base\InvalidParamException' with message 'Hash is invalid.' in C:\xampp\htdocs\github\gestnotas\vendor\yiisoft\yii2\base\Security.php:581
+Stack trace:
+#0 C:\xampp\htdocs\github\gestnotas\vendor\dektrium\yii2-user\helpers\Password.php(41): yii\base\Security->validatePassword('123', '123')
+#1 C:\xampp\htdocs\github\gestnotas\vendor\dektrium\yii2-user\models\LoginForm.php(72): dektrium\user\helpers\Password::validate('123', '123')
+#2 [internal function]: dektrium\user\models\LoginForm->dektrium\user\models\{closure}('password', NULL)
+#3 C:\xampp\htdocs\github\gestnotas\vendor\yiisoft\yii2\validators\InlineValidator.php(69): call_user_func(Object(Closure), 'password', NULL)
+#4 C:\xampp\htdocs\github\gestnotas\vendor\yiisoft\yii2\validators\Validator.php(238): yii\validators\InlineValidator->validateAttribute(Object(dektrium\user\models\LoginForm), 'password')
+#5 C:\xampp\htdocs\github\gestnotas\vendor\yiisoft\yii2\base\Model.php(333): yii\validators\Validator->validateAttributes(Object(dektrium\user\models\LoginForm), Array)
+#6 C:\xampp\htdocs\github\gestnotas\vendor\yiisoft\yii2\widgets\ActiveForm.php(364): yii\base\Model->validate(NULL)
+#7 C:\xampp\htdocs\github\gestnotas\vendor\dektrium\yii2-user\traits\AjaxValidationTrait.php(33): yii\widgets\ActiveForm::validate(Object(dektrium\user\models\LoginForm))
+#8 C:\xampp\htdocs\github\gestnotas\vendor\dektrium\yii2-user\controllers\SecurityController.php(100): dektrium\user\controllers\SecurityController->performAjaxValidation(Object(dektrium\user\models\LoginForm))
+#9 [internal function]: dektrium\user\controllers\SecurityController->actionLogin()
+#10 C:\xampp\htdocs\github\gestnotas\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#11 C:\xampp\htdocs\github\gestnotas\vendor\yiisoft\yii2\base\Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#12 C:\xampp\htdocs\github\gestnotas\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction('login', Array)
+#13 C:\xampp\htdocs\github\gestnotas\vendor\yiisoft\yii2\web\Application.php(83): yii\base\Module->runAction('user/security/l...', Array)
+#14 C:\xampp\htdocs\github\gestnotas\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#15 C:\xampp\htdocs\github\gestnotas\web\index.php(12): yii\base\Application->run()
+#16 {main}
+2016-02-26 01:24:01 [::1][-][-][info][application] $_POST = [
+    '_csrf' => 'akxZWXlyWms/PjsULUYrXBt6PhERRzk4MnkoHBFALgQuBzYwSDcfWQ=='
+    'login-form' => [
+        'login' => 'auri'
+        'password' => '123'
+        'rememberMe' => '0'
+    ]
+    'ajax' => 'login-form'
+]
+
+$_COOKIE = [
+    'PHPSESSID' => '38mam244r3sv9c3ef83coka1l1'
+    '_csrf' => '84fd203f761619c73b4f8bcfb105bd5ef9d73b36f65056c766b0ed539eb3f1ada:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"UrbMT4q7q6gHh5cSX5qEh2toDKoi1EE2\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/gest_notas/web/'
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost:8080'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_LENGTH' => '169'
+    'HTTP_ACCEPT' => 'application/json, text/javascript, */*; q=0.01'
+    'HTTP_ORIGIN' => 'http://localhost:8080'
+    'HTTP_X_CSRF_TOKEN' => 'akxZWXlyWms/PjsULUYrXBt6PhERRzk4MnkoHBFALgQuBzYwSDcfWQ=='
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.116 Safari/537.36 OPR/35.0.2066.82'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded; charset=UTF-8'
+    'HTTP_REFERER' => 'http://localhost:8080/github/gestnotas/web/index.php/user/login'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, lzma'
+    'HTTP_ACCEPT_LANGUAGE' => 'es-ES,es;q=0.8'
+    'HTTP_COOKIE' => 'PHPSESSID=38mam244r3sv9c3ef83coka1l1; _csrf=84fd203f761619c73b4f8bcfb105bd5ef9d73b36f65056c766b0ed539eb3f1ada%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22UrbMT4q7q6gHh5cSX5qEh2toDKoi1EE2%22%3B%7D'
+    'PATH' => 'C:\\Program Files\\Google\\Chrome\\Application;C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Microsoft SQL Server\\110\\DTS\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\110\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\110\\Tools\\Binn\\ManagementStudio\\;C:\\Program Files\\Microsoft Visual Studio 10.0\\Common7\\IDE\\PrivateAssemblies\\;C:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files\\TortoiseGit\\bin;C:\\xampp\\php\\PEAR;C:\\adb;C:\\Program Files\\Windows Kits\\8.1\\Windows Performance Toolkit\\'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.10 (Win32) OpenSSL/1.0.1i Server at localhost Port 8080</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Win32) OpenSSL/1.0.1i'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '8080'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/github/gestnotas/web/index.php'
+    'REMOTE_PORT' => '49242'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/github/gestnotas/web/index.php/user/login'
+    'SCRIPT_NAME' => '/github/gestnotas/web/index.php'
+    'PATH_INFO' => '/user/login'
+    'PATH_TRANSLATED' => 'C:\\xampp\\htdocs\\user\\login'
+    'PHP_SELF' => '/github/gestnotas/web/index.php/user/login'
+    'REQUEST_TIME_FLOAT' => 1456446241.132
+    'REQUEST_TIME' => 1456446241
+]
+2016-02-26 01:24:01 [::1][-][-][error][yii\base\InvalidParamException] exception 'yii\base\InvalidParamException' with message 'Hash is invalid.' in C:\xampp\htdocs\github\gestnotas\vendor\yiisoft\yii2\base\Security.php:581
+Stack trace:
+#0 C:\xampp\htdocs\github\gestnotas\vendor\dektrium\yii2-user\helpers\Password.php(41): yii\base\Security->validatePassword('123', '123')
+#1 C:\xampp\htdocs\github\gestnotas\vendor\dektrium\yii2-user\models\LoginForm.php(72): dektrium\user\helpers\Password::validate('123', '123')
+#2 [internal function]: dektrium\user\models\LoginForm->dektrium\user\models\{closure}('password', NULL)
+#3 C:\xampp\htdocs\github\gestnotas\vendor\yiisoft\yii2\validators\InlineValidator.php(69): call_user_func(Object(Closure), 'password', NULL)
+#4 C:\xampp\htdocs\github\gestnotas\vendor\yiisoft\yii2\validators\Validator.php(238): yii\validators\InlineValidator->validateAttribute(Object(dektrium\user\models\LoginForm), 'password')
+#5 C:\xampp\htdocs\github\gestnotas\vendor\yiisoft\yii2\base\Model.php(333): yii\validators\Validator->validateAttributes(Object(dektrium\user\models\LoginForm), Array)
+#6 C:\xampp\htdocs\github\gestnotas\vendor\yiisoft\yii2\widgets\ActiveForm.php(364): yii\base\Model->validate(NULL)
+#7 C:\xampp\htdocs\github\gestnotas\vendor\dektrium\yii2-user\traits\AjaxValidationTrait.php(33): yii\widgets\ActiveForm::validate(Object(dektrium\user\models\LoginForm))
+#8 C:\xampp\htdocs\github\gestnotas\vendor\dektrium\yii2-user\controllers\SecurityController.php(100): dektrium\user\controllers\SecurityController->performAjaxValidation(Object(dektrium\user\models\LoginForm))
+#9 [internal function]: dektrium\user\controllers\SecurityController->actionLogin()
+#10 C:\xampp\htdocs\github\gestnotas\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#11 C:\xampp\htdocs\github\gestnotas\vendor\yiisoft\yii2\base\Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#12 C:\xampp\htdocs\github\gestnotas\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction('login', Array)
+#13 C:\xampp\htdocs\github\gestnotas\vendor\yiisoft\yii2\web\Application.php(83): yii\base\Module->runAction('user/security/l...', Array)
+#14 C:\xampp\htdocs\github\gestnotas\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#15 C:\xampp\htdocs\github\gestnotas\web\index.php(12): yii\base\Application->run()
+#16 {main}
+2016-02-26 01:24:01 [::1][-][-][info][application] $_POST = [
+    '_csrf' => 'akxZWXlyWms/PjsULUYrXBt6PhERRzk4MnkoHBFALgQuBzYwSDcfWQ=='
+    'login-form' => [
+        'login' => 'auri'
+        'password' => '123'
+        'rememberMe' => '0'
+    ]
+    'ajax' => 'login-form'
+]
+
+$_COOKIE = [
+    'PHPSESSID' => '38mam244r3sv9c3ef83coka1l1'
+    '_csrf' => '84fd203f761619c73b4f8bcfb105bd5ef9d73b36f65056c766b0ed539eb3f1ada:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"UrbMT4q7q6gHh5cSX5qEh2toDKoi1EE2\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/gest_notas/web/'
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost:8080'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_LENGTH' => '169'
+    'HTTP_ACCEPT' => 'application/json, text/javascript, */*; q=0.01'
+    'HTTP_ORIGIN' => 'http://localhost:8080'
+    'HTTP_X_CSRF_TOKEN' => 'akxZWXlyWms/PjsULUYrXBt6PhERRzk4MnkoHBFALgQuBzYwSDcfWQ=='
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.116 Safari/537.36 OPR/35.0.2066.82'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded; charset=UTF-8'
+    'HTTP_REFERER' => 'http://localhost:8080/github/gestnotas/web/index.php/user/login'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, lzma'
+    'HTTP_ACCEPT_LANGUAGE' => 'es-ES,es;q=0.8'
+    'HTTP_COOKIE' => 'PHPSESSID=38mam244r3sv9c3ef83coka1l1; _csrf=84fd203f761619c73b4f8bcfb105bd5ef9d73b36f65056c766b0ed539eb3f1ada%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22UrbMT4q7q6gHh5cSX5qEh2toDKoi1EE2%22%3B%7D'
+    'PATH' => 'C:\\Program Files\\Google\\Chrome\\Application;C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Microsoft SQL Server\\110\\DTS\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\110\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\110\\Tools\\Binn\\ManagementStudio\\;C:\\Program Files\\Microsoft Visual Studio 10.0\\Common7\\IDE\\PrivateAssemblies\\;C:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files\\TortoiseGit\\bin;C:\\xampp\\php\\PEAR;C:\\adb;C:\\Program Files\\Windows Kits\\8.1\\Windows Performance Toolkit\\'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.10 (Win32) OpenSSL/1.0.1i Server at localhost Port 8080</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Win32) OpenSSL/1.0.1i'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '8080'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/github/gestnotas/web/index.php'
+    'REMOTE_PORT' => '49244'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/github/gestnotas/web/index.php/user/login'
+    'SCRIPT_NAME' => '/github/gestnotas/web/index.php'
+    'PATH_INFO' => '/user/login'
+    'PATH_TRANSLATED' => 'C:\\xampp\\htdocs\\user\\login'
+    'PHP_SELF' => '/github/gestnotas/web/index.php/user/login'
+    'REQUEST_TIME_FLOAT' => 1456446241.322
+    'REQUEST_TIME' => 1456446241
+]
+2016-02-26 01:24:01 [::1][-][-][error][yii\base\InvalidParamException] exception 'yii\base\InvalidParamException' with message 'Hash is invalid.' in C:\xampp\htdocs\github\gestnotas\vendor\yiisoft\yii2\base\Security.php:581
+Stack trace:
+#0 C:\xampp\htdocs\github\gestnotas\vendor\dektrium\yii2-user\helpers\Password.php(41): yii\base\Security->validatePassword('123', '123')
+#1 C:\xampp\htdocs\github\gestnotas\vendor\dektrium\yii2-user\models\LoginForm.php(72): dektrium\user\helpers\Password::validate('123', '123')
+#2 [internal function]: dektrium\user\models\LoginForm->dektrium\user\models\{closure}('password', NULL)
+#3 C:\xampp\htdocs\github\gestnotas\vendor\yiisoft\yii2\validators\InlineValidator.php(69): call_user_func(Object(Closure), 'password', NULL)
+#4 C:\xampp\htdocs\github\gestnotas\vendor\yiisoft\yii2\validators\Validator.php(238): yii\validators\InlineValidator->validateAttribute(Object(dektrium\user\models\LoginForm), 'password')
+#5 C:\xampp\htdocs\github\gestnotas\vendor\yiisoft\yii2\base\Model.php(333): yii\validators\Validator->validateAttributes(Object(dektrium\user\models\LoginForm), Array)
+#6 C:\xampp\htdocs\github\gestnotas\vendor\yiisoft\yii2\widgets\ActiveForm.php(364): yii\base\Model->validate(NULL)
+#7 C:\xampp\htdocs\github\gestnotas\vendor\dektrium\yii2-user\traits\AjaxValidationTrait.php(33): yii\widgets\ActiveForm::validate(Object(dektrium\user\models\LoginForm))
+#8 C:\xampp\htdocs\github\gestnotas\vendor\dektrium\yii2-user\controllers\SecurityController.php(100): dektrium\user\controllers\SecurityController->performAjaxValidation(Object(dektrium\user\models\LoginForm))
+#9 [internal function]: dektrium\user\controllers\SecurityController->actionLogin()
+#10 C:\xampp\htdocs\github\gestnotas\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#11 C:\xampp\htdocs\github\gestnotas\vendor\yiisoft\yii2\base\Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#12 C:\xampp\htdocs\github\gestnotas\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction('login', Array)
+#13 C:\xampp\htdocs\github\gestnotas\vendor\yiisoft\yii2\web\Application.php(83): yii\base\Module->runAction('user/security/l...', Array)
+#14 C:\xampp\htdocs\github\gestnotas\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#15 C:\xampp\htdocs\github\gestnotas\web\index.php(12): yii\base\Application->run()
+#16 {main}
+2016-02-26 01:24:01 [::1][-][-][info][application] $_POST = [
+    '_csrf' => 'akxZWXlyWms/PjsULUYrXBt6PhERRzk4MnkoHBFALgQuBzYwSDcfWQ=='
+    'login-form' => [
+        'login' => 'auri'
+        'password' => '123'
+        'rememberMe' => '0'
+    ]
+    'ajax' => 'login-form'
+]
+
+$_COOKIE = [
+    'PHPSESSID' => '38mam244r3sv9c3ef83coka1l1'
+    '_csrf' => '84fd203f761619c73b4f8bcfb105bd5ef9d73b36f65056c766b0ed539eb3f1ada:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"UrbMT4q7q6gHh5cSX5qEh2toDKoi1EE2\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/gest_notas/web/'
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost:8080'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_LENGTH' => '169'
+    'HTTP_ACCEPT' => 'application/json, text/javascript, */*; q=0.01'
+    'HTTP_ORIGIN' => 'http://localhost:8080'
+    'HTTP_X_CSRF_TOKEN' => 'akxZWXlyWms/PjsULUYrXBt6PhERRzk4MnkoHBFALgQuBzYwSDcfWQ=='
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.116 Safari/537.36 OPR/35.0.2066.82'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded; charset=UTF-8'
+    'HTTP_REFERER' => 'http://localhost:8080/github/gestnotas/web/index.php/user/login'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, lzma'
+    'HTTP_ACCEPT_LANGUAGE' => 'es-ES,es;q=0.8'
+    'HTTP_COOKIE' => 'PHPSESSID=38mam244r3sv9c3ef83coka1l1; _csrf=84fd203f761619c73b4f8bcfb105bd5ef9d73b36f65056c766b0ed539eb3f1ada%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22UrbMT4q7q6gHh5cSX5qEh2toDKoi1EE2%22%3B%7D'
+    'PATH' => 'C:\\Program Files\\Google\\Chrome\\Application;C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Microsoft SQL Server\\110\\DTS\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\110\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\110\\Tools\\Binn\\ManagementStudio\\;C:\\Program Files\\Microsoft Visual Studio 10.0\\Common7\\IDE\\PrivateAssemblies\\;C:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files\\TortoiseGit\\bin;C:\\xampp\\php\\PEAR;C:\\adb;C:\\Program Files\\Windows Kits\\8.1\\Windows Performance Toolkit\\'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.10 (Win32) OpenSSL/1.0.1i Server at localhost Port 8080</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Win32) OpenSSL/1.0.1i'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '8080'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/github/gestnotas/web/index.php'
+    'REMOTE_PORT' => '49246'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/github/gestnotas/web/index.php/user/login'
+    'SCRIPT_NAME' => '/github/gestnotas/web/index.php'
+    'PATH_INFO' => '/user/login'
+    'PATH_TRANSLATED' => 'C:\\xampp\\htdocs\\user\\login'
+    'PHP_SELF' => '/github/gestnotas/web/index.php/user/login'
+    'REQUEST_TIME_FLOAT' => 1456446241.525
+    'REQUEST_TIME' => 1456446241
+]
+2016-02-26 01:24:01 [::1][-][-][error][yii\base\InvalidParamException] exception 'yii\base\InvalidParamException' with message 'Hash is invalid.' in C:\xampp\htdocs\github\gestnotas\vendor\yiisoft\yii2\base\Security.php:581
+Stack trace:
+#0 C:\xampp\htdocs\github\gestnotas\vendor\dektrium\yii2-user\helpers\Password.php(41): yii\base\Security->validatePassword('123', '123')
+#1 C:\xampp\htdocs\github\gestnotas\vendor\dektrium\yii2-user\models\LoginForm.php(72): dektrium\user\helpers\Password::validate('123', '123')
+#2 [internal function]: dektrium\user\models\LoginForm->dektrium\user\models\{closure}('password', NULL)
+#3 C:\xampp\htdocs\github\gestnotas\vendor\yiisoft\yii2\validators\InlineValidator.php(69): call_user_func(Object(Closure), 'password', NULL)
+#4 C:\xampp\htdocs\github\gestnotas\vendor\yiisoft\yii2\validators\Validator.php(238): yii\validators\InlineValidator->validateAttribute(Object(dektrium\user\models\LoginForm), 'password')
+#5 C:\xampp\htdocs\github\gestnotas\vendor\yiisoft\yii2\base\Model.php(333): yii\validators\Validator->validateAttributes(Object(dektrium\user\models\LoginForm), Array)
+#6 C:\xampp\htdocs\github\gestnotas\vendor\yiisoft\yii2\widgets\ActiveForm.php(364): yii\base\Model->validate(NULL)
+#7 C:\xampp\htdocs\github\gestnotas\vendor\dektrium\yii2-user\traits\AjaxValidationTrait.php(33): yii\widgets\ActiveForm::validate(Object(dektrium\user\models\LoginForm))
+#8 C:\xampp\htdocs\github\gestnotas\vendor\dektrium\yii2-user\controllers\SecurityController.php(100): dektrium\user\controllers\SecurityController->performAjaxValidation(Object(dektrium\user\models\LoginForm))
+#9 [internal function]: dektrium\user\controllers\SecurityController->actionLogin()
+#10 C:\xampp\htdocs\github\gestnotas\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#11 C:\xampp\htdocs\github\gestnotas\vendor\yiisoft\yii2\base\Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#12 C:\xampp\htdocs\github\gestnotas\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction('login', Array)
+#13 C:\xampp\htdocs\github\gestnotas\vendor\yiisoft\yii2\web\Application.php(83): yii\base\Module->runAction('user/security/l...', Array)
+#14 C:\xampp\htdocs\github\gestnotas\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#15 C:\xampp\htdocs\github\gestnotas\web\index.php(12): yii\base\Application->run()
+#16 {main}
+2016-02-26 01:24:01 [::1][-][-][info][application] $_POST = [
+    '_csrf' => 'akxZWXlyWms/PjsULUYrXBt6PhERRzk4MnkoHBFALgQuBzYwSDcfWQ=='
+    'login-form' => [
+        'login' => 'auri'
+        'password' => '123'
+        'rememberMe' => '0'
+    ]
+    'ajax' => 'login-form'
+]
+
+$_COOKIE = [
+    'PHPSESSID' => '38mam244r3sv9c3ef83coka1l1'
+    '_csrf' => '84fd203f761619c73b4f8bcfb105bd5ef9d73b36f65056c766b0ed539eb3f1ada:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"UrbMT4q7q6gHh5cSX5qEh2toDKoi1EE2\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/gest_notas/web/'
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost:8080'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_LENGTH' => '169'
+    'HTTP_ACCEPT' => 'application/json, text/javascript, */*; q=0.01'
+    'HTTP_ORIGIN' => 'http://localhost:8080'
+    'HTTP_X_CSRF_TOKEN' => 'akxZWXlyWms/PjsULUYrXBt6PhERRzk4MnkoHBFALgQuBzYwSDcfWQ=='
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.116 Safari/537.36 OPR/35.0.2066.82'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded; charset=UTF-8'
+    'HTTP_REFERER' => 'http://localhost:8080/github/gestnotas/web/index.php/user/login'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, lzma'
+    'HTTP_ACCEPT_LANGUAGE' => 'es-ES,es;q=0.8'
+    'HTTP_COOKIE' => 'PHPSESSID=38mam244r3sv9c3ef83coka1l1; _csrf=84fd203f761619c73b4f8bcfb105bd5ef9d73b36f65056c766b0ed539eb3f1ada%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22UrbMT4q7q6gHh5cSX5qEh2toDKoi1EE2%22%3B%7D'
+    'PATH' => 'C:\\Program Files\\Google\\Chrome\\Application;C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Microsoft SQL Server\\110\\DTS\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\110\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\110\\Tools\\Binn\\ManagementStudio\\;C:\\Program Files\\Microsoft Visual Studio 10.0\\Common7\\IDE\\PrivateAssemblies\\;C:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files\\TortoiseGit\\bin;C:\\xampp\\php\\PEAR;C:\\adb;C:\\Program Files\\Windows Kits\\8.1\\Windows Performance Toolkit\\'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.10 (Win32) OpenSSL/1.0.1i Server at localhost Port 8080</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Win32) OpenSSL/1.0.1i'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '8080'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/github/gestnotas/web/index.php'
+    'REMOTE_PORT' => '49248'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/github/gestnotas/web/index.php/user/login'
+    'SCRIPT_NAME' => '/github/gestnotas/web/index.php'
+    'PATH_INFO' => '/user/login'
+    'PATH_TRANSLATED' => 'C:\\xampp\\htdocs\\user\\login'
+    'PHP_SELF' => '/github/gestnotas/web/index.php/user/login'
+    'REQUEST_TIME_FLOAT' => 1456446241.706
+    'REQUEST_TIME' => 1456446241
+]
+2016-02-26 01:24:01 [::1][-][-][error][yii\base\InvalidParamException] exception 'yii\base\InvalidParamException' with message 'Hash is invalid.' in C:\xampp\htdocs\github\gestnotas\vendor\yiisoft\yii2\base\Security.php:581
+Stack trace:
+#0 C:\xampp\htdocs\github\gestnotas\vendor\dektrium\yii2-user\helpers\Password.php(41): yii\base\Security->validatePassword('123', '123')
+#1 C:\xampp\htdocs\github\gestnotas\vendor\dektrium\yii2-user\models\LoginForm.php(72): dektrium\user\helpers\Password::validate('123', '123')
+#2 [internal function]: dektrium\user\models\LoginForm->dektrium\user\models\{closure}('password', NULL)
+#3 C:\xampp\htdocs\github\gestnotas\vendor\yiisoft\yii2\validators\InlineValidator.php(69): call_user_func(Object(Closure), 'password', NULL)
+#4 C:\xampp\htdocs\github\gestnotas\vendor\yiisoft\yii2\validators\Validator.php(238): yii\validators\InlineValidator->validateAttribute(Object(dektrium\user\models\LoginForm), 'password')
+#5 C:\xampp\htdocs\github\gestnotas\vendor\yiisoft\yii2\base\Model.php(333): yii\validators\Validator->validateAttributes(Object(dektrium\user\models\LoginForm), Array)
+#6 C:\xampp\htdocs\github\gestnotas\vendor\yiisoft\yii2\widgets\ActiveForm.php(364): yii\base\Model->validate(NULL)
+#7 C:\xampp\htdocs\github\gestnotas\vendor\dektrium\yii2-user\traits\AjaxValidationTrait.php(33): yii\widgets\ActiveForm::validate(Object(dektrium\user\models\LoginForm))
+#8 C:\xampp\htdocs\github\gestnotas\vendor\dektrium\yii2-user\controllers\SecurityController.php(100): dektrium\user\controllers\SecurityController->performAjaxValidation(Object(dektrium\user\models\LoginForm))
+#9 [internal function]: dektrium\user\controllers\SecurityController->actionLogin()
+#10 C:\xampp\htdocs\github\gestnotas\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#11 C:\xampp\htdocs\github\gestnotas\vendor\yiisoft\yii2\base\Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#12 C:\xampp\htdocs\github\gestnotas\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction('login', Array)
+#13 C:\xampp\htdocs\github\gestnotas\vendor\yiisoft\yii2\web\Application.php(83): yii\base\Module->runAction('user/security/l...', Array)
+#14 C:\xampp\htdocs\github\gestnotas\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#15 C:\xampp\htdocs\github\gestnotas\web\index.php(12): yii\base\Application->run()
+#16 {main}
+2016-02-26 01:24:01 [::1][-][-][info][application] $_POST = [
+    '_csrf' => 'akxZWXlyWms/PjsULUYrXBt6PhERRzk4MnkoHBFALgQuBzYwSDcfWQ=='
+    'login-form' => [
+        'login' => 'auri'
+        'password' => '123'
+        'rememberMe' => '0'
+    ]
+    'ajax' => 'login-form'
+]
+
+$_COOKIE = [
+    'PHPSESSID' => '38mam244r3sv9c3ef83coka1l1'
+    '_csrf' => '84fd203f761619c73b4f8bcfb105bd5ef9d73b36f65056c766b0ed539eb3f1ada:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"UrbMT4q7q6gHh5cSX5qEh2toDKoi1EE2\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/gest_notas/web/'
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost:8080'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_LENGTH' => '169'
+    'HTTP_ACCEPT' => 'application/json, text/javascript, */*; q=0.01'
+    'HTTP_ORIGIN' => 'http://localhost:8080'
+    'HTTP_X_CSRF_TOKEN' => 'akxZWXlyWms/PjsULUYrXBt6PhERRzk4MnkoHBFALgQuBzYwSDcfWQ=='
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.116 Safari/537.36 OPR/35.0.2066.82'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded; charset=UTF-8'
+    'HTTP_REFERER' => 'http://localhost:8080/github/gestnotas/web/index.php/user/login'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, lzma'
+    'HTTP_ACCEPT_LANGUAGE' => 'es-ES,es;q=0.8'
+    'HTTP_COOKIE' => 'PHPSESSID=38mam244r3sv9c3ef83coka1l1; _csrf=84fd203f761619c73b4f8bcfb105bd5ef9d73b36f65056c766b0ed539eb3f1ada%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22UrbMT4q7q6gHh5cSX5qEh2toDKoi1EE2%22%3B%7D'
+    'PATH' => 'C:\\Program Files\\Google\\Chrome\\Application;C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Microsoft SQL Server\\110\\DTS\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\110\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\110\\Tools\\Binn\\ManagementStudio\\;C:\\Program Files\\Microsoft Visual Studio 10.0\\Common7\\IDE\\PrivateAssemblies\\;C:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files\\TortoiseGit\\bin;C:\\xampp\\php\\PEAR;C:\\adb;C:\\Program Files\\Windows Kits\\8.1\\Windows Performance Toolkit\\'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.10 (Win32) OpenSSL/1.0.1i Server at localhost Port 8080</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Win32) OpenSSL/1.0.1i'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '8080'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/github/gestnotas/web/index.php'
+    'REMOTE_PORT' => '49250'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/github/gestnotas/web/index.php/user/login'
+    'SCRIPT_NAME' => '/github/gestnotas/web/index.php'
+    'PATH_INFO' => '/user/login'
+    'PATH_TRANSLATED' => 'C:\\xampp\\htdocs\\user\\login'
+    'PHP_SELF' => '/github/gestnotas/web/index.php/user/login'
+    'REQUEST_TIME_FLOAT' => 1456446241.899
+    'REQUEST_TIME' => 1456446241
+]
+2016-02-26 01:24:02 [::1][-][-][error][yii\base\InvalidParamException] exception 'yii\base\InvalidParamException' with message 'Hash is invalid.' in C:\xampp\htdocs\github\gestnotas\vendor\yiisoft\yii2\base\Security.php:581
+Stack trace:
+#0 C:\xampp\htdocs\github\gestnotas\vendor\dektrium\yii2-user\helpers\Password.php(41): yii\base\Security->validatePassword('123', '123')
+#1 C:\xampp\htdocs\github\gestnotas\vendor\dektrium\yii2-user\models\LoginForm.php(72): dektrium\user\helpers\Password::validate('123', '123')
+#2 [internal function]: dektrium\user\models\LoginForm->dektrium\user\models\{closure}('password', NULL)
+#3 C:\xampp\htdocs\github\gestnotas\vendor\yiisoft\yii2\validators\InlineValidator.php(69): call_user_func(Object(Closure), 'password', NULL)
+#4 C:\xampp\htdocs\github\gestnotas\vendor\yiisoft\yii2\validators\Validator.php(238): yii\validators\InlineValidator->validateAttribute(Object(dektrium\user\models\LoginForm), 'password')
+#5 C:\xampp\htdocs\github\gestnotas\vendor\yiisoft\yii2\base\Model.php(333): yii\validators\Validator->validateAttributes(Object(dektrium\user\models\LoginForm), Array)
+#6 C:\xampp\htdocs\github\gestnotas\vendor\yiisoft\yii2\widgets\ActiveForm.php(364): yii\base\Model->validate(NULL)
+#7 C:\xampp\htdocs\github\gestnotas\vendor\dektrium\yii2-user\traits\AjaxValidationTrait.php(33): yii\widgets\ActiveForm::validate(Object(dektrium\user\models\LoginForm))
+#8 C:\xampp\htdocs\github\gestnotas\vendor\dektrium\yii2-user\controllers\SecurityController.php(100): dektrium\user\controllers\SecurityController->performAjaxValidation(Object(dektrium\user\models\LoginForm))
+#9 [internal function]: dektrium\user\controllers\SecurityController->actionLogin()
+#10 C:\xampp\htdocs\github\gestnotas\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#11 C:\xampp\htdocs\github\gestnotas\vendor\yiisoft\yii2\base\Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#12 C:\xampp\htdocs\github\gestnotas\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction('login', Array)
+#13 C:\xampp\htdocs\github\gestnotas\vendor\yiisoft\yii2\web\Application.php(83): yii\base\Module->runAction('user/security/l...', Array)
+#14 C:\xampp\htdocs\github\gestnotas\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#15 C:\xampp\htdocs\github\gestnotas\web\index.php(12): yii\base\Application->run()
+#16 {main}
+2016-02-26 01:24:02 [::1][-][-][info][application] $_POST = [
+    '_csrf' => 'akxZWXlyWms/PjsULUYrXBt6PhERRzk4MnkoHBFALgQuBzYwSDcfWQ=='
+    'login-form' => [
+        'login' => 'auri'
+        'password' => '123'
+        'rememberMe' => '0'
+    ]
+    'ajax' => 'login-form'
+]
+
+$_COOKIE = [
+    'PHPSESSID' => '38mam244r3sv9c3ef83coka1l1'
+    '_csrf' => '84fd203f761619c73b4f8bcfb105bd5ef9d73b36f65056c766b0ed539eb3f1ada:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"UrbMT4q7q6gHh5cSX5qEh2toDKoi1EE2\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/gest_notas/web/'
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost:8080'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_LENGTH' => '169'
+    'HTTP_ACCEPT' => 'application/json, text/javascript, */*; q=0.01'
+    'HTTP_ORIGIN' => 'http://localhost:8080'
+    'HTTP_X_CSRF_TOKEN' => 'akxZWXlyWms/PjsULUYrXBt6PhERRzk4MnkoHBFALgQuBzYwSDcfWQ=='
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.116 Safari/537.36 OPR/35.0.2066.82'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded; charset=UTF-8'
+    'HTTP_REFERER' => 'http://localhost:8080/github/gestnotas/web/index.php/user/login'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, lzma'
+    'HTTP_ACCEPT_LANGUAGE' => 'es-ES,es;q=0.8'
+    'HTTP_COOKIE' => 'PHPSESSID=38mam244r3sv9c3ef83coka1l1; _csrf=84fd203f761619c73b4f8bcfb105bd5ef9d73b36f65056c766b0ed539eb3f1ada%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22UrbMT4q7q6gHh5cSX5qEh2toDKoi1EE2%22%3B%7D'
+    'PATH' => 'C:\\Program Files\\Google\\Chrome\\Application;C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Microsoft SQL Server\\110\\DTS\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\110\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\110\\Tools\\Binn\\ManagementStudio\\;C:\\Program Files\\Microsoft Visual Studio 10.0\\Common7\\IDE\\PrivateAssemblies\\;C:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files\\TortoiseGit\\bin;C:\\xampp\\php\\PEAR;C:\\adb;C:\\Program Files\\Windows Kits\\8.1\\Windows Performance Toolkit\\'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.10 (Win32) OpenSSL/1.0.1i Server at localhost Port 8080</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Win32) OpenSSL/1.0.1i'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '8080'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/github/gestnotas/web/index.php'
+    'REMOTE_PORT' => '49252'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/github/gestnotas/web/index.php/user/login'
+    'SCRIPT_NAME' => '/github/gestnotas/web/index.php'
+    'PATH_INFO' => '/user/login'
+    'PATH_TRANSLATED' => 'C:\\xampp\\htdocs\\user\\login'
+    'PHP_SELF' => '/github/gestnotas/web/index.php/user/login'
+    'REQUEST_TIME_FLOAT' => 1456446242.087
+    'REQUEST_TIME' => 1456446242
+]
+2016-02-26 01:24:02 [::1][-][-][error][yii\base\InvalidParamException] exception 'yii\base\InvalidParamException' with message 'Hash is invalid.' in C:\xampp\htdocs\github\gestnotas\vendor\yiisoft\yii2\base\Security.php:581
+Stack trace:
+#0 C:\xampp\htdocs\github\gestnotas\vendor\dektrium\yii2-user\helpers\Password.php(41): yii\base\Security->validatePassword('123', '123')
+#1 C:\xampp\htdocs\github\gestnotas\vendor\dektrium\yii2-user\models\LoginForm.php(72): dektrium\user\helpers\Password::validate('123', '123')
+#2 [internal function]: dektrium\user\models\LoginForm->dektrium\user\models\{closure}('password', NULL)
+#3 C:\xampp\htdocs\github\gestnotas\vendor\yiisoft\yii2\validators\InlineValidator.php(69): call_user_func(Object(Closure), 'password', NULL)
+#4 C:\xampp\htdocs\github\gestnotas\vendor\yiisoft\yii2\validators\Validator.php(238): yii\validators\InlineValidator->validateAttribute(Object(dektrium\user\models\LoginForm), 'password')
+#5 C:\xampp\htdocs\github\gestnotas\vendor\yiisoft\yii2\base\Model.php(333): yii\validators\Validator->validateAttributes(Object(dektrium\user\models\LoginForm), Array)
+#6 C:\xampp\htdocs\github\gestnotas\vendor\yiisoft\yii2\widgets\ActiveForm.php(364): yii\base\Model->validate(NULL)
+#7 C:\xampp\htdocs\github\gestnotas\vendor\dektrium\yii2-user\traits\AjaxValidationTrait.php(33): yii\widgets\ActiveForm::validate(Object(dektrium\user\models\LoginForm))
+#8 C:\xampp\htdocs\github\gestnotas\vendor\dektrium\yii2-user\controllers\SecurityController.php(100): dektrium\user\controllers\SecurityController->performAjaxValidation(Object(dektrium\user\models\LoginForm))
+#9 [internal function]: dektrium\user\controllers\SecurityController->actionLogin()
+#10 C:\xampp\htdocs\github\gestnotas\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#11 C:\xampp\htdocs\github\gestnotas\vendor\yiisoft\yii2\base\Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#12 C:\xampp\htdocs\github\gestnotas\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction('login', Array)
+#13 C:\xampp\htdocs\github\gestnotas\vendor\yiisoft\yii2\web\Application.php(83): yii\base\Module->runAction('user/security/l...', Array)
+#14 C:\xampp\htdocs\github\gestnotas\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#15 C:\xampp\htdocs\github\gestnotas\web\index.php(12): yii\base\Application->run()
+#16 {main}
+2016-02-26 01:24:02 [::1][-][-][info][application] $_POST = [
+    '_csrf' => 'akxZWXlyWms/PjsULUYrXBt6PhERRzk4MnkoHBFALgQuBzYwSDcfWQ=='
+    'login-form' => [
+        'login' => 'auri'
+        'password' => '123'
+        'rememberMe' => '0'
+    ]
+    'ajax' => 'login-form'
+]
+
+$_COOKIE = [
+    'PHPSESSID' => '38mam244r3sv9c3ef83coka1l1'
+    '_csrf' => '84fd203f761619c73b4f8bcfb105bd5ef9d73b36f65056c766b0ed539eb3f1ada:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"UrbMT4q7q6gHh5cSX5qEh2toDKoi1EE2\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/gest_notas/web/'
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost:8080'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_LENGTH' => '169'
+    'HTTP_ACCEPT' => 'application/json, text/javascript, */*; q=0.01'
+    'HTTP_ORIGIN' => 'http://localhost:8080'
+    'HTTP_X_CSRF_TOKEN' => 'akxZWXlyWms/PjsULUYrXBt6PhERRzk4MnkoHBFALgQuBzYwSDcfWQ=='
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.116 Safari/537.36 OPR/35.0.2066.82'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded; charset=UTF-8'
+    'HTTP_REFERER' => 'http://localhost:8080/github/gestnotas/web/index.php/user/login'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, lzma'
+    'HTTP_ACCEPT_LANGUAGE' => 'es-ES,es;q=0.8'
+    'HTTP_COOKIE' => 'PHPSESSID=38mam244r3sv9c3ef83coka1l1; _csrf=84fd203f761619c73b4f8bcfb105bd5ef9d73b36f65056c766b0ed539eb3f1ada%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22UrbMT4q7q6gHh5cSX5qEh2toDKoi1EE2%22%3B%7D'
+    'PATH' => 'C:\\Program Files\\Google\\Chrome\\Application;C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Microsoft SQL Server\\110\\DTS\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\110\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\110\\Tools\\Binn\\ManagementStudio\\;C:\\Program Files\\Microsoft Visual Studio 10.0\\Common7\\IDE\\PrivateAssemblies\\;C:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files\\TortoiseGit\\bin;C:\\xampp\\php\\PEAR;C:\\adb;C:\\Program Files\\Windows Kits\\8.1\\Windows Performance Toolkit\\'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.10 (Win32) OpenSSL/1.0.1i Server at localhost Port 8080</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Win32) OpenSSL/1.0.1i'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '8080'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/github/gestnotas/web/index.php'
+    'REMOTE_PORT' => '49254'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/github/gestnotas/web/index.php/user/login'
+    'SCRIPT_NAME' => '/github/gestnotas/web/index.php'
+    'PATH_INFO' => '/user/login'
+    'PATH_TRANSLATED' => 'C:\\xampp\\htdocs\\user\\login'
+    'PHP_SELF' => '/github/gestnotas/web/index.php/user/login'
+    'REQUEST_TIME_FLOAT' => 1456446242.273
+    'REQUEST_TIME' => 1456446242
+]
+2016-02-26 01:24:02 [::1][-][-][error][yii\base\InvalidParamException] exception 'yii\base\InvalidParamException' with message 'Hash is invalid.' in C:\xampp\htdocs\github\gestnotas\vendor\yiisoft\yii2\base\Security.php:581
+Stack trace:
+#0 C:\xampp\htdocs\github\gestnotas\vendor\dektrium\yii2-user\helpers\Password.php(41): yii\base\Security->validatePassword('123', '123')
+#1 C:\xampp\htdocs\github\gestnotas\vendor\dektrium\yii2-user\models\LoginForm.php(72): dektrium\user\helpers\Password::validate('123', '123')
+#2 [internal function]: dektrium\user\models\LoginForm->dektrium\user\models\{closure}('password', NULL)
+#3 C:\xampp\htdocs\github\gestnotas\vendor\yiisoft\yii2\validators\InlineValidator.php(69): call_user_func(Object(Closure), 'password', NULL)
+#4 C:\xampp\htdocs\github\gestnotas\vendor\yiisoft\yii2\validators\Validator.php(238): yii\validators\InlineValidator->validateAttribute(Object(dektrium\user\models\LoginForm), 'password')
+#5 C:\xampp\htdocs\github\gestnotas\vendor\yiisoft\yii2\base\Model.php(333): yii\validators\Validator->validateAttributes(Object(dektrium\user\models\LoginForm), Array)
+#6 C:\xampp\htdocs\github\gestnotas\vendor\yiisoft\yii2\widgets\ActiveForm.php(364): yii\base\Model->validate(NULL)
+#7 C:\xampp\htdocs\github\gestnotas\vendor\dektrium\yii2-user\traits\AjaxValidationTrait.php(33): yii\widgets\ActiveForm::validate(Object(dektrium\user\models\LoginForm))
+#8 C:\xampp\htdocs\github\gestnotas\vendor\dektrium\yii2-user\controllers\SecurityController.php(100): dektrium\user\controllers\SecurityController->performAjaxValidation(Object(dektrium\user\models\LoginForm))
+#9 [internal function]: dektrium\user\controllers\SecurityController->actionLogin()
+#10 C:\xampp\htdocs\github\gestnotas\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#11 C:\xampp\htdocs\github\gestnotas\vendor\yiisoft\yii2\base\Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#12 C:\xampp\htdocs\github\gestnotas\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction('login', Array)
+#13 C:\xampp\htdocs\github\gestnotas\vendor\yiisoft\yii2\web\Application.php(83): yii\base\Module->runAction('user/security/l...', Array)
+#14 C:\xampp\htdocs\github\gestnotas\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#15 C:\xampp\htdocs\github\gestnotas\web\index.php(12): yii\base\Application->run()
+#16 {main}
+2016-02-26 01:24:02 [::1][-][-][info][application] $_POST = [
+    '_csrf' => 'akxZWXlyWms/PjsULUYrXBt6PhERRzk4MnkoHBFALgQuBzYwSDcfWQ=='
+    'login-form' => [
+        'login' => 'auri'
+        'password' => '123'
+        'rememberMe' => '0'
+    ]
+    'ajax' => 'login-form'
+]
+
+$_COOKIE = [
+    'PHPSESSID' => '38mam244r3sv9c3ef83coka1l1'
+    '_csrf' => '84fd203f761619c73b4f8bcfb105bd5ef9d73b36f65056c766b0ed539eb3f1ada:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"UrbMT4q7q6gHh5cSX5qEh2toDKoi1EE2\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/gest_notas/web/'
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost:8080'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_LENGTH' => '169'
+    'HTTP_ACCEPT' => 'application/json, text/javascript, */*; q=0.01'
+    'HTTP_ORIGIN' => 'http://localhost:8080'
+    'HTTP_X_CSRF_TOKEN' => 'akxZWXlyWms/PjsULUYrXBt6PhERRzk4MnkoHBFALgQuBzYwSDcfWQ=='
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.116 Safari/537.36 OPR/35.0.2066.82'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded; charset=UTF-8'
+    'HTTP_REFERER' => 'http://localhost:8080/github/gestnotas/web/index.php/user/login'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, lzma'
+    'HTTP_ACCEPT_LANGUAGE' => 'es-ES,es;q=0.8'
+    'HTTP_COOKIE' => 'PHPSESSID=38mam244r3sv9c3ef83coka1l1; _csrf=84fd203f761619c73b4f8bcfb105bd5ef9d73b36f65056c766b0ed539eb3f1ada%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22UrbMT4q7q6gHh5cSX5qEh2toDKoi1EE2%22%3B%7D'
+    'PATH' => 'C:\\Program Files\\Google\\Chrome\\Application;C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Microsoft SQL Server\\110\\DTS\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\110\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\110\\Tools\\Binn\\ManagementStudio\\;C:\\Program Files\\Microsoft Visual Studio 10.0\\Common7\\IDE\\PrivateAssemblies\\;C:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files\\TortoiseGit\\bin;C:\\xampp\\php\\PEAR;C:\\adb;C:\\Program Files\\Windows Kits\\8.1\\Windows Performance Toolkit\\'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.10 (Win32) OpenSSL/1.0.1i Server at localhost Port 8080</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Win32) OpenSSL/1.0.1i'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '8080'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/github/gestnotas/web/index.php'
+    'REMOTE_PORT' => '49256'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/github/gestnotas/web/index.php/user/login'
+    'SCRIPT_NAME' => '/github/gestnotas/web/index.php'
+    'PATH_INFO' => '/user/login'
+    'PATH_TRANSLATED' => 'C:\\xampp\\htdocs\\user\\login'
+    'PHP_SELF' => '/github/gestnotas/web/index.php/user/login'
+    'REQUEST_TIME_FLOAT' => 1456446242.456
+    'REQUEST_TIME' => 1456446242
+]
+2016-02-26 01:24:07 [::1][-][-][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request "user/calificaciones/index".' in C:\xampp\htdocs\github\gestnotas\vendor\yiisoft\yii2\base\Module.php:461
+Stack trace:
+#0 C:\xampp\htdocs\github\gestnotas\vendor\yiisoft\yii2\web\Application.php(83): yii\base\Module->runAction('user/calificaci...', Array)
+#1 C:\xampp\htdocs\github\gestnotas\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 C:\xampp\htdocs\github\gestnotas\web\index.php(12): yii\base\Application->run()
+#3 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Página no encontrada.' in C:\xampp\htdocs\github\gestnotas\vendor\yiisoft\yii2\web\Application.php:95
+Stack trace:
+#0 C:\xampp\htdocs\github\gestnotas\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 C:\xampp\htdocs\github\gestnotas\web\index.php(12): yii\base\Application->run()
+#2 {main}
+2016-02-26 01:24:06 [::1][-][-][info][application] $_COOKIE = [
+    'PHPSESSID' => '38mam244r3sv9c3ef83coka1l1'
+    '_csrf' => '84fd203f761619c73b4f8bcfb105bd5ef9d73b36f65056c766b0ed539eb3f1ada:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"UrbMT4q7q6gHh5cSX5qEh2toDKoi1EE2\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/gest_notas/web/'
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost:8080'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.116 Safari/537.36 OPR/35.0.2066.82'
+    'HTTP_REFERER' => 'http://localhost:8080/github/gestnotas/web/index.php/user/login'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, lzma, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'es-ES,es;q=0.8'
+    'HTTP_COOKIE' => 'PHPSESSID=38mam244r3sv9c3ef83coka1l1; _csrf=84fd203f761619c73b4f8bcfb105bd5ef9d73b36f65056c766b0ed539eb3f1ada%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22UrbMT4q7q6gHh5cSX5qEh2toDKoi1EE2%22%3B%7D'
+    'PATH' => 'C:\\Program Files\\Google\\Chrome\\Application;C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Microsoft SQL Server\\110\\DTS\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\110\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\110\\Tools\\Binn\\ManagementStudio\\;C:\\Program Files\\Microsoft Visual Studio 10.0\\Common7\\IDE\\PrivateAssemblies\\;C:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files\\TortoiseGit\\bin;C:\\xampp\\php\\PEAR;C:\\adb;C:\\Program Files\\Windows Kits\\8.1\\Windows Performance Toolkit\\'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.10 (Win32) OpenSSL/1.0.1i Server at localhost Port 8080</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Win32) OpenSSL/1.0.1i'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '8080'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/github/gestnotas/web/index.php'
+    'REMOTE_PORT' => '49258'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/github/gestnotas/web/index.php/user/calificaciones/index'
+    'SCRIPT_NAME' => '/github/gestnotas/web/index.php'
+    'PATH_INFO' => '/user/calificaciones/index'
+    'PATH_TRANSLATED' => 'C:\\xampp\\htdocs\\user\\calificaciones\\index'
+    'PHP_SELF' => '/github/gestnotas/web/index.php/user/calificaciones/index'
+    'REQUEST_TIME_FLOAT' => 1456446246.902
+    'REQUEST_TIME' => 1456446246
+]
+2016-02-26 01:27:30 [::1][-][-][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request "parentezco/index".' in C:\xampp\htdocs\github\gestnotas\vendor\yiisoft\yii2\base\Module.php:461
+Stack trace:
+#0 C:\xampp\htdocs\github\gestnotas\vendor\yiisoft\yii2\web\Application.php(83): yii\base\Module->runAction('parentezco/inde...', Array)
+#1 C:\xampp\htdocs\github\gestnotas\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 C:\xampp\htdocs\github\gestnotas\web\index.php(12): yii\base\Application->run()
+#3 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Página no encontrada.' in C:\xampp\htdocs\github\gestnotas\vendor\yiisoft\yii2\web\Application.php:95
+Stack trace:
+#0 C:\xampp\htdocs\github\gestnotas\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 C:\xampp\htdocs\github\gestnotas\web\index.php(12): yii\base\Application->run()
+#2 {main}
+2016-02-26 01:27:30 [::1][-][-][info][application] $_COOKIE = [
+    'PHPSESSID' => '38mam244r3sv9c3ef83coka1l1'
+    '_csrf' => '84fd203f761619c73b4f8bcfb105bd5ef9d73b36f65056c766b0ed539eb3f1ada:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"UrbMT4q7q6gHh5cSX5qEh2toDKoi1EE2\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/gest_notas/web/'
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost:8080'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.116 Safari/537.36 OPR/35.0.2066.82'
+    'HTTP_REFERER' => 'http://localhost:8080/github/gestnotas/web/index.php/parroquias/index'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, lzma, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'es-ES,es;q=0.8'
+    'HTTP_COOKIE' => 'PHPSESSID=38mam244r3sv9c3ef83coka1l1; _csrf=84fd203f761619c73b4f8bcfb105bd5ef9d73b36f65056c766b0ed539eb3f1ada%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22UrbMT4q7q6gHh5cSX5qEh2toDKoi1EE2%22%3B%7D'
+    'PATH' => 'C:\\Program Files\\Google\\Chrome\\Application;C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Microsoft SQL Server\\110\\DTS\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\110\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\110\\Tools\\Binn\\ManagementStudio\\;C:\\Program Files\\Microsoft Visual Studio 10.0\\Common7\\IDE\\PrivateAssemblies\\;C:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files\\TortoiseGit\\bin;C:\\xampp\\php\\PEAR;C:\\adb;C:\\Program Files\\Windows Kits\\8.1\\Windows Performance Toolkit\\'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.10 (Win32) OpenSSL/1.0.1i Server at localhost Port 8080</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Win32) OpenSSL/1.0.1i'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '8080'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/github/gestnotas/web/index.php'
+    'REMOTE_PORT' => '49283'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/github/gestnotas/web/index.php/parentezco/index'
+    'SCRIPT_NAME' => '/github/gestnotas/web/index.php'
+    'PATH_INFO' => '/parentezco/index'
+    'PATH_TRANSLATED' => 'C:\\xampp\\htdocs\\parentezco\\index'
+    'PHP_SELF' => '/github/gestnotas/web/index.php/parentezco/index'
+    'REQUEST_TIME_FLOAT' => 1456446450.564
+    'REQUEST_TIME' => 1456446450
+]
+2016-02-26 01:27:45 [::1][-][-][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request "parentezco/index".' in C:\xampp\htdocs\github\gestnotas\vendor\yiisoft\yii2\base\Module.php:461
+Stack trace:
+#0 C:\xampp\htdocs\github\gestnotas\vendor\yiisoft\yii2\web\Application.php(83): yii\base\Module->runAction('parentezco/inde...', Array)
+#1 C:\xampp\htdocs\github\gestnotas\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 C:\xampp\htdocs\github\gestnotas\web\index.php(12): yii\base\Application->run()
+#3 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Página no encontrada.' in C:\xampp\htdocs\github\gestnotas\vendor\yiisoft\yii2\web\Application.php:95
+Stack trace:
+#0 C:\xampp\htdocs\github\gestnotas\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 C:\xampp\htdocs\github\gestnotas\web\index.php(12): yii\base\Application->run()
+#2 {main}
+2016-02-26 01:27:45 [::1][-][-][info][application] $_COOKIE = [
+    'PHPSESSID' => '38mam244r3sv9c3ef83coka1l1'
+    '_csrf' => '84fd203f761619c73b4f8bcfb105bd5ef9d73b36f65056c766b0ed539eb3f1ada:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"UrbMT4q7q6gHh5cSX5qEh2toDKoi1EE2\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/gest_notas/web/'
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost:8080'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.116 Safari/537.36 OPR/35.0.2066.82'
+    'HTTP_REFERER' => 'http://localhost:8080/github/gestnotas/web/index.php/parentezco/index'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, lzma, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'es-ES,es;q=0.8'
+    'HTTP_COOKIE' => 'PHPSESSID=38mam244r3sv9c3ef83coka1l1; _csrf=84fd203f761619c73b4f8bcfb105bd5ef9d73b36f65056c766b0ed539eb3f1ada%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22UrbMT4q7q6gHh5cSX5qEh2toDKoi1EE2%22%3B%7D'
+    'PATH' => 'C:\\Program Files\\Google\\Chrome\\Application;C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Microsoft SQL Server\\110\\DTS\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\110\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\110\\Tools\\Binn\\ManagementStudio\\;C:\\Program Files\\Microsoft Visual Studio 10.0\\Common7\\IDE\\PrivateAssemblies\\;C:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files\\TortoiseGit\\bin;C:\\xampp\\php\\PEAR;C:\\adb;C:\\Program Files\\Windows Kits\\8.1\\Windows Performance Toolkit\\'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.10 (Win32) OpenSSL/1.0.1i Server at localhost Port 8080</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Win32) OpenSSL/1.0.1i'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '8080'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/github/gestnotas/web/index.php'
+    'REMOTE_PORT' => '49285'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/github/gestnotas/web/index.php/parentezco/index'
+    'SCRIPT_NAME' => '/github/gestnotas/web/index.php'
+    'PATH_INFO' => '/parentezco/index'
+    'PATH_TRANSLATED' => 'C:\\xampp\\htdocs\\parentezco\\index'
+    'PHP_SELF' => '/github/gestnotas/web/index.php/parentezco/index'
+    'REQUEST_TIME_FLOAT' => 1456446465.151
+    'REQUEST_TIME' => 1456446465
+]
+2016-02-26 01:30:20 [::1][-][-][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request: matricular/buscar' in C:\xampp\htdocs\github\gestnotas\vendor\yiisoft\yii2\base\Controller.php:122
+Stack trace:
+#0 C:\xampp\htdocs\github\gestnotas\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction('buscar', Array)
+#1 C:\xampp\htdocs\github\gestnotas\vendor\yiisoft\yii2\web\Application.php(83): yii\base\Module->runAction('matricular/busc...', Array)
+#2 C:\xampp\htdocs\github\gestnotas\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#3 C:\xampp\htdocs\github\gestnotas\web\index.php(12): yii\base\Application->run()
+#4 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Página no encontrada.' in C:\xampp\htdocs\github\gestnotas\vendor\yiisoft\yii2\web\Application.php:95
+Stack trace:
+#0 C:\xampp\htdocs\github\gestnotas\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 C:\xampp\htdocs\github\gestnotas\web\index.php(12): yii\base\Application->run()
+#2 {main}
+2016-02-26 01:30:20 [::1][-][-][info][application] $_COOKIE = [
+    'PHPSESSID' => '38mam244r3sv9c3ef83coka1l1'
+    '_csrf' => '84fd203f761619c73b4f8bcfb105bd5ef9d73b36f65056c766b0ed539eb3f1ada:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"UrbMT4q7q6gHh5cSX5qEh2toDKoi1EE2\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/gest_notas/web/'
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost:8080'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.116 Safari/537.36 OPR/35.0.2066.82'
+    'HTTP_REFERER' => 'http://localhost:8080/github/gestnotas/web/index.php/matricular/index'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, lzma, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'es-ES,es;q=0.8'
+    'HTTP_COOKIE' => 'PHPSESSID=38mam244r3sv9c3ef83coka1l1; _csrf=84fd203f761619c73b4f8bcfb105bd5ef9d73b36f65056c766b0ed539eb3f1ada%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22UrbMT4q7q6gHh5cSX5qEh2toDKoi1EE2%22%3B%7D'
+    'PATH' => 'C:\\Program Files\\Google\\Chrome\\Application;C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Microsoft SQL Server\\110\\DTS\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\110\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\110\\Tools\\Binn\\ManagementStudio\\;C:\\Program Files\\Microsoft Visual Studio 10.0\\Common7\\IDE\\PrivateAssemblies\\;C:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files\\TortoiseGit\\bin;C:\\xampp\\php\\PEAR;C:\\adb;C:\\Program Files\\Windows Kits\\8.1\\Windows Performance Toolkit\\'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.10 (Win32) OpenSSL/1.0.1i Server at localhost Port 8080</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Win32) OpenSSL/1.0.1i'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '8080'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/github/gestnotas/web/index.php'
+    'REMOTE_PORT' => '49298'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/github/gestnotas/web/index.php/matricular/buscar'
+    'SCRIPT_NAME' => '/github/gestnotas/web/index.php'
+    'PATH_INFO' => '/matricular/buscar'
+    'PATH_TRANSLATED' => 'C:\\xampp\\htdocs\\matricular\\buscar'
+    'PHP_SELF' => '/github/gestnotas/web/index.php/matricular/buscar'
+    'REQUEST_TIME_FLOAT' => 1456446620.21
+    'REQUEST_TIME' => 1456446620
+]
+2016-02-26 01:30:27 [::1][-][-][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request: matricular/buscar' in C:\xampp\htdocs\github\gestnotas\vendor\yiisoft\yii2\base\Controller.php:122
+Stack trace:
+#0 C:\xampp\htdocs\github\gestnotas\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction('buscar', Array)
+#1 C:\xampp\htdocs\github\gestnotas\vendor\yiisoft\yii2\web\Application.php(83): yii\base\Module->runAction('matricular/busc...', Array)
+#2 C:\xampp\htdocs\github\gestnotas\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#3 C:\xampp\htdocs\github\gestnotas\web\index.php(12): yii\base\Application->run()
+#4 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Página no encontrada.' in C:\xampp\htdocs\github\gestnotas\vendor\yiisoft\yii2\web\Application.php:95
+Stack trace:
+#0 C:\xampp\htdocs\github\gestnotas\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 C:\xampp\htdocs\github\gestnotas\web\index.php(12): yii\base\Application->run()
+#2 {main}
+2016-02-26 01:30:27 [::1][-][-][info][application] $_COOKIE = [
+    'PHPSESSID' => '38mam244r3sv9c3ef83coka1l1'
+    '_csrf' => '84fd203f761619c73b4f8bcfb105bd5ef9d73b36f65056c766b0ed539eb3f1ada:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"UrbMT4q7q6gHh5cSX5qEh2toDKoi1EE2\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/gest_notas/web/'
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost:8080'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.116 Safari/537.36 OPR/35.0.2066.82'
+    'HTTP_REFERER' => 'http://localhost:8080/github/gestnotas/web/index.php/matricular/index'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, lzma, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'es-ES,es;q=0.8'
+    'HTTP_COOKIE' => 'PHPSESSID=38mam244r3sv9c3ef83coka1l1; _csrf=84fd203f761619c73b4f8bcfb105bd5ef9d73b36f65056c766b0ed539eb3f1ada%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22UrbMT4q7q6gHh5cSX5qEh2toDKoi1EE2%22%3B%7D'
+    'PATH' => 'C:\\Program Files\\Google\\Chrome\\Application;C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Microsoft SQL Server\\110\\DTS\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\110\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\110\\Tools\\Binn\\ManagementStudio\\;C:\\Program Files\\Microsoft Visual Studio 10.0\\Common7\\IDE\\PrivateAssemblies\\;C:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files\\TortoiseGit\\bin;C:\\xampp\\php\\PEAR;C:\\adb;C:\\Program Files\\Windows Kits\\8.1\\Windows Performance Toolkit\\'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.10 (Win32) OpenSSL/1.0.1i Server at localhost Port 8080</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Win32) OpenSSL/1.0.1i'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '8080'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/github/gestnotas/web/index.php'
+    'REMOTE_PORT' => '49298'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/github/gestnotas/web/index.php/matricular/buscar'
+    'SCRIPT_NAME' => '/github/gestnotas/web/index.php'
+    'PATH_INFO' => '/matricular/buscar'
+    'PATH_TRANSLATED' => 'C:\\xampp\\htdocs\\matricular\\buscar'
+    'PHP_SELF' => '/github/gestnotas/web/index.php/matricular/buscar'
+    'REQUEST_TIME_FLOAT' => 1456446627.194
+    'REQUEST_TIME' => 1456446627
+]
+2016-02-26 01:30:34 [::1][-][-][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request: matricular/buscar' in C:\xampp\htdocs\github\gestnotas\vendor\yiisoft\yii2\base\Controller.php:122
+Stack trace:
+#0 C:\xampp\htdocs\github\gestnotas\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction('buscar', Array)
+#1 C:\xampp\htdocs\github\gestnotas\vendor\yiisoft\yii2\web\Application.php(83): yii\base\Module->runAction('matricular/busc...', Array)
+#2 C:\xampp\htdocs\github\gestnotas\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#3 C:\xampp\htdocs\github\gestnotas\web\index.php(12): yii\base\Application->run()
+#4 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Página no encontrada.' in C:\xampp\htdocs\github\gestnotas\vendor\yiisoft\yii2\web\Application.php:95
+Stack trace:
+#0 C:\xampp\htdocs\github\gestnotas\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 C:\xampp\htdocs\github\gestnotas\web\index.php(12): yii\base\Application->run()
+#2 {main}
+2016-02-26 01:30:34 [::1][-][-][info][application] $_COOKIE = [
+    'PHPSESSID' => '38mam244r3sv9c3ef83coka1l1'
+    '_csrf' => '84fd203f761619c73b4f8bcfb105bd5ef9d73b36f65056c766b0ed539eb3f1ada:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"UrbMT4q7q6gHh5cSX5qEh2toDKoi1EE2\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/gest_notas/web/'
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost:8080'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.116 Safari/537.36 OPR/35.0.2066.82'
+    'HTTP_REFERER' => 'http://localhost:8080/github/gestnotas/web/index.php/matricular/index'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, lzma, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'es-ES,es;q=0.8'
+    'HTTP_COOKIE' => 'PHPSESSID=38mam244r3sv9c3ef83coka1l1; _csrf=84fd203f761619c73b4f8bcfb105bd5ef9d73b36f65056c766b0ed539eb3f1ada%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22UrbMT4q7q6gHh5cSX5qEh2toDKoi1EE2%22%3B%7D'
+    'PATH' => 'C:\\Program Files\\Google\\Chrome\\Application;C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Microsoft SQL Server\\110\\DTS\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\110\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\110\\Tools\\Binn\\ManagementStudio\\;C:\\Program Files\\Microsoft Visual Studio 10.0\\Common7\\IDE\\PrivateAssemblies\\;C:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files\\TortoiseGit\\bin;C:\\xampp\\php\\PEAR;C:\\adb;C:\\Program Files\\Windows Kits\\8.1\\Windows Performance Toolkit\\'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.10 (Win32) OpenSSL/1.0.1i Server at localhost Port 8080</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Win32) OpenSSL/1.0.1i'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '8080'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/github/gestnotas/web/index.php'
+    'REMOTE_PORT' => '49298'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/github/gestnotas/web/index.php/matricular/buscar'
+    'SCRIPT_NAME' => '/github/gestnotas/web/index.php'
+    'PATH_INFO' => '/matricular/buscar'
+    'PATH_TRANSLATED' => 'C:\\xampp\\htdocs\\matricular\\buscar'
+    'PHP_SELF' => '/github/gestnotas/web/index.php/matricular/buscar'
+    'REQUEST_TIME_FLOAT' => 1456446634.226
+    'REQUEST_TIME' => 1456446634
+]
+2016-02-26 01:40:59 [::1][-][-][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request "parentezco/index".' in C:\xampp\htdocs\github\gestnotas\vendor\yiisoft\yii2\base\Module.php:461
+Stack trace:
+#0 C:\xampp\htdocs\github\gestnotas\vendor\yiisoft\yii2\web\Application.php(83): yii\base\Module->runAction('parentezco/inde...', Array)
+#1 C:\xampp\htdocs\github\gestnotas\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 C:\xampp\htdocs\github\gestnotas\web\index.php(12): yii\base\Application->run()
+#3 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Página no encontrada.' in C:\xampp\htdocs\github\gestnotas\vendor\yiisoft\yii2\web\Application.php:95
+Stack trace:
+#0 C:\xampp\htdocs\github\gestnotas\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 C:\xampp\htdocs\github\gestnotas\web\index.php(12): yii\base\Application->run()
+#2 {main}
+2016-02-26 01:40:59 [::1][-][-][info][application] $_COOKIE = [
+    'PHPSESSID' => '38mam244r3sv9c3ef83coka1l1'
+    '_csrf' => '84fd203f761619c73b4f8bcfb105bd5ef9d73b36f65056c766b0ed539eb3f1ada:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"UrbMT4q7q6gHh5cSX5qEh2toDKoi1EE2\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/gest_notas/web/'
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost:8080'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.116 Safari/537.36 OPR/35.0.2066.82'
+    'HTTP_REFERER' => 'http://localhost:8080/github/gestnotas/web/index.php/profesiones/index'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, lzma, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'es-ES,es;q=0.8'
+    'HTTP_COOKIE' => 'PHPSESSID=38mam244r3sv9c3ef83coka1l1; _csrf=84fd203f761619c73b4f8bcfb105bd5ef9d73b36f65056c766b0ed539eb3f1ada%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22UrbMT4q7q6gHh5cSX5qEh2toDKoi1EE2%22%3B%7D'
+    'PATH' => 'C:\\Program Files\\Google\\Chrome\\Application;C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Microsoft SQL Server\\110\\DTS\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\110\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\110\\Tools\\Binn\\ManagementStudio\\;C:\\Program Files\\Microsoft Visual Studio 10.0\\Common7\\IDE\\PrivateAssemblies\\;C:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files\\TortoiseGit\\bin;C:\\xampp\\php\\PEAR;C:\\adb;C:\\Program Files\\Windows Kits\\8.1\\Windows Performance Toolkit\\'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.10 (Win32) OpenSSL/1.0.1i Server at localhost Port 8080</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Win32) OpenSSL/1.0.1i'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '8080'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/github/gestnotas/web/index.php'
+    'REMOTE_PORT' => '49378'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/github/gestnotas/web/index.php/parentezco/index'
+    'SCRIPT_NAME' => '/github/gestnotas/web/index.php'
+    'PATH_INFO' => '/parentezco/index'
+    'PATH_TRANSLATED' => 'C:\\xampp\\htdocs\\parentezco\\index'
+    'PHP_SELF' => '/github/gestnotas/web/index.php/parentezco/index'
+    'REQUEST_TIME_FLOAT' => 1456447259.832
+    'REQUEST_TIME' => 1456447259
+]
+2016-02-26 02:17:08 [::1][-][-][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request: matricular/buscar' in C:\xampp\htdocs\github\gestnotas\vendor\yiisoft\yii2\base\Controller.php:122
+Stack trace:
+#0 C:\xampp\htdocs\github\gestnotas\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction('buscar', Array)
+#1 C:\xampp\htdocs\github\gestnotas\vendor\yiisoft\yii2\web\Application.php(83): yii\base\Module->runAction('matricular/busc...', Array)
+#2 C:\xampp\htdocs\github\gestnotas\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#3 C:\xampp\htdocs\github\gestnotas\web\index.php(12): yii\base\Application->run()
+#4 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Página no encontrada.' in C:\xampp\htdocs\github\gestnotas\vendor\yiisoft\yii2\web\Application.php:95
+Stack trace:
+#0 C:\xampp\htdocs\github\gestnotas\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 C:\xampp\htdocs\github\gestnotas\web\index.php(12): yii\base\Application->run()
+#2 {main}
+2016-02-26 02:17:07 [::1][-][-][info][application] $_COOKIE = [
+    'PHPSESSID' => '38mam244r3sv9c3ef83coka1l1'
+    '_csrf' => '84fd203f761619c73b4f8bcfb105bd5ef9d73b36f65056c766b0ed539eb3f1ada:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"UrbMT4q7q6gHh5cSX5qEh2toDKoi1EE2\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/gest_notas/web/'
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost:8080'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.116 Safari/537.36 OPR/35.0.2066.82'
+    'HTTP_REFERER' => 'http://localhost:8080/github/gestnotas/web/index.php/matricular/index'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, lzma, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'es-ES,es;q=0.8'
+    'HTTP_COOKIE' => 'PHPSESSID=38mam244r3sv9c3ef83coka1l1; _csrf=84fd203f761619c73b4f8bcfb105bd5ef9d73b36f65056c766b0ed539eb3f1ada%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22UrbMT4q7q6gHh5cSX5qEh2toDKoi1EE2%22%3B%7D'
+    'PATH' => 'C:\\Program Files\\Google\\Chrome\\Application;C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Microsoft SQL Server\\110\\DTS\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\110\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\110\\Tools\\Binn\\ManagementStudio\\;C:\\Program Files\\Microsoft Visual Studio 10.0\\Common7\\IDE\\PrivateAssemblies\\;C:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files\\TortoiseGit\\bin;C:\\xampp\\php\\PEAR;C:\\adb;C:\\Program Files\\Windows Kits\\8.1\\Windows Performance Toolkit\\'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.10 (Win32) OpenSSL/1.0.1i Server at localhost Port 8080</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Win32) OpenSSL/1.0.1i'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '8080'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/github/gestnotas/web/index.php'
+    'REMOTE_PORT' => '49399'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/github/gestnotas/web/index.php/matricular/buscar'
+    'SCRIPT_NAME' => '/github/gestnotas/web/index.php'
+    'PATH_INFO' => '/matricular/buscar'
+    'PATH_TRANSLATED' => 'C:\\xampp\\htdocs\\matricular\\buscar'
+    'PHP_SELF' => '/github/gestnotas/web/index.php/matricular/buscar'
+    'REQUEST_TIME_FLOAT' => 1456449427.981
+    'REQUEST_TIME' => 1456449427
+]
